@@ -1,0 +1,57 @@
+npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> code-oss-dev@1.142.0 test-browser-no-install
+> node test/unit/browser/index.js --browser chromium --run src/vs/workbench/contrib/terminal/test/browser/xterm/xtermTerminal.test.ts
+
+
+
+  XtermTerminal - /CHROMIUM/
+    ✔ should use fallback dimensions of 80x30
+    ✔ clearBuffer should clear rich and partial command history including scrollback
+    ✔ clearBuffer should preserve normal-buffer command history and decorations when clearing the alternate buffer
+    ✔ detached terminals do not register decoration shutdown listeners (65ms)
+    ✔ keeps a scrollback override when the configuration changes
+    ✔ keeps custom glyphs enabled when moved out of an auxiliary window
+    ✔ keeps custom glyphs enabled when moved during addon import
+    fontRendering - /CHROMIUM/
+      ✔ inherits the workbench font policy by default
+      ✔ applies the configured policy when the terminal is opened
+      ✔ restores the inherited policy when the optional setting is unset
+      ✔ updates the CSS class and clears glyph bitmaps without changing font options
+      ✔ keeps text rendering opaque when images or font rendering change
+      ✔ image support preserves text rendering in a opaque light regular terminal (137ms)
+      ✔ image support preserves text rendering in a translucent light regular terminal (134ms)
+      ✔ image support preserves text rendering in a opaque light detached terminal (133ms)
+      ✔ image support preserves text rendering in a translucent light detached terminal (134ms)
+      ✔ image support preserves text rendering in a opaque dark regular terminal (144ms)
+      ✔ image support preserves text rendering in a translucent dark regular terminal (137ms)
+      ✔ image support preserves text rendering in a opaque dark detached terminal (132ms)
+      ✔ image support preserves text rendering in a translucent dark detached terminal (132ms)
+      ✔ applies configuration changes when a detached terminal is updated
+    getContentsAsText - /CHROMIUM/
+      ✔ should return all buffer contents when no markers provided
+      ✔ should return contents from start marker to end
+      ✔ should return contents from start to end marker
+      ✔ should return single line when start and end markers are the same
+      ✔ should return empty string when start marker is beyond end marker
+      ✔ should handle empty buffer
+      ✔ should handle mixed content with spaces and special characters
+      ✔ should fall back to line 0 when startMarker is disposed (line === -1)
+      ✔ should throw error when endMarker is disposed (line === -1)
+      ✔ should handle markers at buffer boundaries
+      ✔ should handle terminal escape sequences properly
+    getBufferReverseIterator - /CHROMIUM/
+      ✔ should get text properly within scrollback limit
+      ✔ should get text properly when exceed scrollback limit
+    theme - /CHROMIUM/
+      ✔ should apply correct background color based on getBackgroundColor
+      ✔ should react to and apply theme changes
+
+
+  36 passing (2s)
+

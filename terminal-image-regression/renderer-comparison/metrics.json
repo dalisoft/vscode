@@ -1,0 +1,192 @@
+{
+  "renderer": {
+    "xterm": "6.1.0-beta.304",
+    "addon_webgl": "0.20.0-beta.300",
+    "addon_image": "0.10.0-beta.301",
+    "playwright": "1.64.0-alpha-1790635538000",
+    "chromium": "Chrome for Testing 156.0.8078.4",
+    "platform": "Linux; software WebGL under Chromium; not native macOS"
+  },
+  "dpr1": {
+    "light": {
+      "addon_enabled_without_images_vs_no_addon": {
+        "size": [
+          850,
+          178
+        ],
+        "pixels": 151300,
+        "different_pixels": 0,
+        "different_percent": 0.0,
+        "mean_absolute_channel_delta": 0.0,
+        "max_channel_delta": 0
+      },
+      "previous_images_enabled_transparency_vs_opaque_no_addon": {
+        "size": [
+          850,
+          178
+        ],
+        "pixels": 151300,
+        "different_pixels": 8877,
+        "different_percent": 5.867151,
+        "mean_absolute_channel_delta": 2.142884,
+        "max_channel_delta": 62
+      }
+    },
+    "dark": {
+      "addon_enabled_without_images_vs_no_addon": {
+        "size": [
+          850,
+          178
+        ],
+        "pixels": 151300,
+        "different_pixels": 0,
+        "different_percent": 0.0,
+        "mean_absolute_channel_delta": 0.0,
+        "max_channel_delta": 0
+      },
+      "previous_images_enabled_transparency_vs_opaque_no_addon": {
+        "size": [
+          850,
+          178
+        ],
+        "pixels": 151300,
+        "different_pixels": 8986,
+        "different_percent": 5.939194,
+        "mean_absolute_channel_delta": 0.417365,
+        "max_channel_delta": 21
+      }
+    }
+  },
+  "dpr2": {
+    "light": {
+      "addon_enabled_without_images_vs_no_addon": {
+        "size": [
+          1920,
+          440
+        ],
+        "pixels": 844800,
+        "different_pixels": 0,
+        "different_percent": 0.0,
+        "mean_absolute_channel_delta": 0.0,
+        "max_channel_delta": 0
+      }
+    },
+    "dark": {
+      "addon_enabled_without_images_vs_no_addon": {
+        "size": [
+          1920,
+          440
+        ],
+        "pixels": 844800,
+        "different_pixels": 0,
+        "different_percent": 0.0,
+        "mean_absolute_channel_delta": 0.0,
+        "max_channel_delta": 0
+      }
+    }
+  },
+  "alpha_hole": {
+    "iterm-light-dpr1-trans0.png": {
+      "region_xyxy_exclusive": [
+        24,
+        24,
+        40,
+        40
+      ],
+      "pixel_differences_vs_text_baseline": 0,
+      "total_pixels": 256
+    },
+    "kitty-light-dpr1-trans0.png": {
+      "region_xyxy_exclusive": [
+        27,
+        27,
+        39,
+        39
+      ],
+      "pixel_differences_vs_text_baseline": 0,
+      "total_pixels": 144
+    },
+    "iterm-light-dpr1-trans0.png_samples": {
+      "opaque_red": [
+        224,
+        32,
+        32
+      ],
+      "transparent_hole_center": [
+        245,
+        245,
+        245
+      ],
+      "partial_alpha_green": [
+        188,
+        228,
+        203
+      ]
+    },
+    "kitty-light-dpr1-trans0.png_samples": {
+      "opaque_red": [
+        224,
+        32,
+        32
+      ],
+      "transparent_hole_center": [
+        245,
+        245,
+        245
+      ],
+      "partial_alpha_green": [
+        188,
+        228,
+        203
+      ]
+    }
+  },
+  "dynamic_theme": {
+    "light": {
+      "opaque_initial_vs_opaque_return": {
+        "size": [
+          850,
+          178
+        ],
+        "pixels": 151300,
+        "different_pixels": 0,
+        "different_percent": 0.0,
+        "mean_absolute_channel_delta": 0.0,
+        "max_channel_delta": 0
+      }
+    },
+    "dark": {
+      "opaque_initial_vs_opaque_return": {
+        "size": [
+          850,
+          178
+        ],
+        "pixels": 151300,
+        "different_pixels": 0,
+        "different_percent": 0.0,
+        "mean_absolute_channel_delta": 0.0,
+        "max_channel_delta": 0
+      }
+    }
+  },
+  "image_protocol_counts": {
+    "dpr1_captured_states": 30,
+    "dpr1_states_with_errors": 0,
+    "dpr1_webgl_loaded_states": 30,
+    "dpr1_image_added_states": 22,
+    "dpr1_protocol_state_count": {
+      "text": 8,
+      "kitty": 4,
+      "kitty-negative": 10,
+      "iterm": 4,
+      "sixel": 4
+    },
+    "dpr2_no_text_image_added_states": 6,
+    "dpr2_no_text_protocols": {
+      "text": 2,
+      "kitty": 2,
+      "iterm": 2,
+      "sixel": 2
+    }
+  }
+}

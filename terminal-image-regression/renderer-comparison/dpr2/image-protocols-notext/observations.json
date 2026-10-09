@@ -1,0 +1,418 @@
+[
+  {
+    "key": "text-light",
+    "status": {
+      "webglLoaded": true,
+      "blendFixApplied": false,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": false,
+      "protocol": "text",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "",
+      "windowDpr": 2,
+      "webglDpr": 2,
+      "webglDeviceCanvas": {
+        "width": 1312,
+        "height": 324
+      },
+      "glDrawingBuffer": [
+        656,
+        162
+      ],
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    }
+  },
+  {
+    "key": "kitty-light",
+    "status": {
+      "webglLoaded": true,
+      "blendFixApplied": false,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "",
+      "windowDpr": 2,
+      "webglDpr": 2,
+      "webglDeviceCanvas": {
+        "width": 1312,
+        "height": 324
+      },
+      "glDrawingBuffer": [
+        656,
+        162
+      ],
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    }
+  },
+  {
+    "key": "iterm-light",
+    "status": {
+      "webglLoaded": true,
+      "blendFixApplied": false,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "iterm",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "",
+      "windowDpr": 2,
+      "webglDpr": 2,
+      "webglDeviceCanvas": {
+        "width": 1312,
+        "height": 324
+      },
+      "glDrawingBuffer": [
+        656,
+        162
+      ],
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    }
+  },
+  {
+    "key": "sixel-light",
+    "status": {
+      "webglLoaded": true,
+      "blendFixApplied": false,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "sixel",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "",
+      "windowDpr": 2,
+      "webglDpr": 2,
+      "webglDeviceCanvas": {
+        "width": 1312,
+        "height": 324
+      },
+      "glDrawingBuffer": [
+        656,
+        162
+      ],
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    }
+  },
+  {
+    "key": "text-dark",
+    "status": {
+      "webglLoaded": true,
+      "blendFixApplied": false,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": false,
+      "protocol": "text",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "",
+      "windowDpr": 2,
+      "webglDpr": 2,
+      "webglDeviceCanvas": {
+        "width": 1312,
+        "height": 324
+      },
+      "glDrawingBuffer": [
+        656,
+        162
+      ],
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    }
+  },
+  {
+    "key": "kitty-dark",
+    "status": {
+      "webglLoaded": true,
+      "blendFixApplied": false,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "",
+      "windowDpr": 2,
+      "webglDpr": 2,
+      "webglDeviceCanvas": {
+        "width": 1312,
+        "height": 324
+      },
+      "glDrawingBuffer": [
+        656,
+        162
+      ],
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    }
+  },
+  {
+    "key": "iterm-dark",
+    "status": {
+      "webglLoaded": true,
+      "blendFixApplied": false,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "iterm",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "",
+      "windowDpr": 2,
+      "webglDpr": 2,
+      "webglDeviceCanvas": {
+        "width": 1312,
+        "height": 324
+      },
+      "glDrawingBuffer": [
+        656,
+        162
+      ],
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    }
+  },
+  {
+    "key": "sixel-dark",
+    "status": {
+      "webglLoaded": true,
+      "blendFixApplied": false,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "sixel",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "",
+      "windowDpr": 2,
+      "webglDpr": 2,
+      "webglDeviceCanvas": {
+        "width": 1312,
+        "height": 324
+      },
+      "glDrawingBuffer": [
+        656,
+        162
+      ],
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    }
+  }
+]

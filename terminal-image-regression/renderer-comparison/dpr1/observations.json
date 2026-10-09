@@ -1,0 +1,1488 @@
+[
+  {
+    "key": "text-light-dpr1-trans0-addon0",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 0,
+    "protocol": "text",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": false,
+      "imageAdded": false,
+      "protocol": "text",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "text-light-dpr1-trans0-addon1",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 1,
+    "protocol": "text",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": false,
+      "protocol": "text",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "text-light-dpr1-trans1-addon0",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 0,
+    "protocol": "text",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": false,
+      "imageAdded": false,
+      "protocol": "text",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "text-light-dpr1-trans1-addon1",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 1,
+    "protocol": "text",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": true,
+      "imageAdded": false,
+      "protocol": "text",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "kitty-light-dpr1-trans0",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 1,
+    "protocol": "kitty",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "kitty-negative-light-dpr1-trans0",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 1,
+    "protocol": "kitty-negative",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty-negative",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": [
+        656,
+        162
+      ],
+      "hasBottomLayer": true,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "iterm-light-dpr1-trans0",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 1,
+    "protocol": "iterm",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "iterm",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "sixel-light-dpr1-trans0",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 1,
+    "protocol": "sixel",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "sixel",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "kitty-light-dpr1-trans1",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 1,
+    "protocol": "kitty",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "kitty-negative-light-dpr1-trans1",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 1,
+    "protocol": "kitty-negative",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty-negative",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": [
+        656,
+        162
+      ],
+      "hasBottomLayer": true,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "iterm-light-dpr1-trans1",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 1,
+    "protocol": "iterm",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "iterm",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "sixel-light-dpr1-trans1",
+    "theme": "light",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 1,
+    "protocol": "sixel",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "sixel",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "dynamic-kitty-negative-light-dpr1-opaque-initial",
+    "theme": "light",
+    "dpr": 1,
+    "addon": 1,
+    "protocol": "kitty-negative",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty-negative",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": [
+        656,
+        162
+      ],
+      "hasBottomLayer": true,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "dynamicState": {
+      "name": "opaque-initial",
+      "result": null
+    },
+    "errors": []
+  },
+  {
+    "key": "dynamic-kitty-negative-light-dpr1-translucent",
+    "theme": "light",
+    "dpr": 1,
+    "addon": 1,
+    "protocol": "kitty-negative",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty-negative",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": [
+        656,
+        162
+      ],
+      "hasBottomLayer": true,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "dynamicState": {
+      "name": "translucent",
+      "applied": {
+        "allowTransparency": true,
+        "background": "#FFFFFFAA",
+        "inlineBackground": "rgba(255, 255, 255, 0.667)",
+        "backgroundRGBA": 4294967210,
+        "backgroundAlpha": 170,
+        "hasBottomLayer": true
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "dynamic-kitty-negative-light-dpr1-opaque-return",
+    "theme": "light",
+    "dpr": 1,
+    "addon": 1,
+    "protocol": "kitty-negative",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty-negative",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": [
+        656,
+        162
+      ],
+      "hasBottomLayer": true,
+      "screenBackground": "rgb(245, 245, 245)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "dynamicState": {
+      "name": "opaque-return",
+      "applied": {
+        "allowTransparency": false,
+        "background": "#F5F5F5",
+        "inlineBackground": "rgb(245, 245, 245)",
+        "backgroundRGBA": 4126537215,
+        "backgroundAlpha": 255,
+        "hasBottomLayer": true
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "text-dark-dpr1-trans0-addon0",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 0,
+    "protocol": "text",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": false,
+      "imageAdded": false,
+      "protocol": "text",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "text-dark-dpr1-trans0-addon1",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 1,
+    "protocol": "text",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": false,
+      "protocol": "text",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "text-dark-dpr1-trans1-addon0",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 0,
+    "protocol": "text",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": false,
+      "imageAdded": false,
+      "protocol": "text",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "text-dark-dpr1-trans1-addon1",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 1,
+    "protocol": "text",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": true,
+      "imageAdded": false,
+      "protocol": "text",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "kitty-dark-dpr1-trans0",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 1,
+    "protocol": "kitty",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "kitty-negative-dark-dpr1-trans0",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 1,
+    "protocol": "kitty-negative",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty-negative",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": [
+        656,
+        162
+      ],
+      "hasBottomLayer": true,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "iterm-dark-dpr1-trans0",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 1,
+    "protocol": "iterm",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "iterm",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "sixel-dark-dpr1-trans0",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 0,
+    "addon": 1,
+    "protocol": "sixel",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "sixel",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "kitty-dark-dpr1-trans1",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 1,
+    "protocol": "kitty",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "kitty-negative-dark-dpr1-trans1",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 1,
+    "protocol": "kitty-negative",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty-negative",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": [
+        656,
+        162
+      ],
+      "hasBottomLayer": true,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "iterm-dark-dpr1-trans1",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 1,
+    "protocol": "iterm",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "iterm",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "sixel-dark-dpr1-trans1",
+    "theme": "dark",
+    "dpr": 1,
+    "transparency": 1,
+    "addon": 1,
+    "protocol": "sixel",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": true,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "sixel",
+      "alphaImagePixels": false,
+      "imageCanvasWidth": 656,
+      "bottomLayerCanvasSize": null,
+      "hasBottomLayer": false,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "dynamic-kitty-negative-dark-dpr1-opaque-initial",
+    "theme": "dark",
+    "dpr": 1,
+    "addon": 1,
+    "protocol": "kitty-negative",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty-negative",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": [
+        656,
+        162
+      ],
+      "hasBottomLayer": true,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "dynamicState": {
+      "name": "opaque-initial",
+      "result": null
+    },
+    "errors": []
+  },
+  {
+    "key": "dynamic-kitty-negative-dark-dpr1-translucent",
+    "theme": "dark",
+    "dpr": 1,
+    "addon": 1,
+    "protocol": "kitty-negative",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty-negative",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": [
+        656,
+        162
+      ],
+      "hasBottomLayer": true,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "dynamicState": {
+      "name": "translucent",
+      "applied": {
+        "allowTransparency": true,
+        "background": "#FFFFFFAA",
+        "inlineBackground": "rgba(255, 255, 255, 0.667)",
+        "backgroundRGBA": 4294967210,
+        "backgroundAlpha": 170,
+        "hasBottomLayer": true
+      }
+    },
+    "errors": []
+  },
+  {
+    "key": "dynamic-kitty-negative-dark-dpr1-opaque-return",
+    "theme": "dark",
+    "dpr": 1,
+    "addon": 1,
+    "protocol": "kitty-negative",
+    "status": {
+      "webglLoaded": true,
+      "webglRenderer": "Le",
+      "allowTransparency": false,
+      "withImageAddon": true,
+      "imageAdded": true,
+      "protocol": "kitty-negative",
+      "alphaImagePixels": true,
+      "imageCanvasWidth": 0,
+      "bottomLayerCanvasSize": [
+        656,
+        162
+      ],
+      "hasBottomLayer": true,
+      "screenBackground": "rgb(39, 40, 34)",
+      "text": "Regular text: The quick brown fox jumps over 0123456789.",
+      "dimensions": {
+        "cols": 82,
+        "rows": 9,
+        "screen": {
+          "x": 8,
+          "y": 8,
+          "width": 656,
+          "height": 162,
+          "top": 8,
+          "right": 664,
+          "bottom": 170,
+          "left": 8
+        },
+        "root": {
+          "x": 8,
+          "y": 8,
+          "width": 834,
+          "height": 162,
+          "top": 8,
+          "right": 842,
+          "bottom": 170,
+          "left": 8
+        }
+      }
+    },
+    "dynamicState": {
+      "name": "opaque-return",
+      "applied": {
+        "allowTransparency": false,
+        "background": "#272822",
+        "inlineBackground": "rgb(39, 40, 34)",
+        "backgroundRGBA": 656941823,
+        "backgroundAlpha": 255,
+        "hasBottomLayer": true
+      }
+    },
+    "errors": []
+  }
+]

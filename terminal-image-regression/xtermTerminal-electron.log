@@ -1,0 +1,58 @@
+Found --crash-reporter-directory argument. Setting crashDumps directory to be '/home/t3-codex/projects/foss/vscode/.build/crashes'
+[46229:1009/174729.776001:WARNING:media/gpu/vaapi/vaapi_wrapper.cc:1655] drmGetDevices2() has not found any devices
+
+(code-oss.original:46161): GLib-GIO-CRITICAL **: 17:47:29.813: g_settings_schema_source_lookup: assertion 'source != NULL' failed
+(node:46255) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+(node:46255) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:46255) ExperimentalWarning: WASI is an experimental feature and might change at any time
+
+[0m[0m
+[0m  Tests are using suiteSetup and setup correctly[0m
+  [32m  ✔[0m[90m assertCleanState - check that registries are clean at the start of test running[0m
+
+[0m  XtermTerminal[0m
+  [32m  ✔[0m[90m should use fallback dimensions of 80x30[0m
+  [32m  ✔[0m[90m clearBuffer should clear rich and partial command history including scrollback[0m
+  [32m  ✔[0m[90m clearBuffer should preserve normal-buffer command history and decorations when clearing the alternate buffer[0m
+  [32m  ✔[0m[90m detached terminals do not register decoration shutdown listeners[0m
+  [32m  ✔[0m[90m keeps a scrollback override when the configuration changes[0m
+  [32m  ✔[0m[90m keeps custom glyphs enabled when moved out of an auxiliary window[0m[33m (38ms)[0m
+  [32m  ✔[0m[90m keeps custom glyphs enabled when moved during addon import[0m
+[0m    fontRendering[0m
+    [32m  ✔[0m[90m inherits the workbench font policy by default[0m
+    [32m  ✔[0m[90m applies the configured policy when the terminal is opened[0m
+    [32m  ✔[0m[90m restores the inherited policy when the optional setting is unset[0m
+    [32m  ✔[0m[90m updates the CSS class and clears glyph bitmaps without changing font options[0m
+    [32m  ✔[0m[90m keeps text rendering opaque when images or font rendering change[0m
+    [32m  ✔[0m[90m image support preserves text rendering in a opaque light regular terminal[0m[31m (158ms)[0m
+    [32m  ✔[0m[90m image support preserves text rendering in a translucent light regular terminal[0m[31m (138ms)[0m
+    [32m  ✔[0m[90m image support preserves text rendering in a opaque light detached terminal[0m[31m (134ms)[0m
+    [32m  ✔[0m[90m image support preserves text rendering in a translucent light detached terminal[0m[31m (134ms)[0m
+    [32m  ✔[0m[90m image support preserves text rendering in a opaque dark regular terminal[0m[31m (136ms)[0m
+    [32m  ✔[0m[90m image support preserves text rendering in a translucent dark regular terminal[0m[31m (136ms)[0m
+    [32m  ✔[0m[90m image support preserves text rendering in a opaque dark detached terminal[0m[31m (133ms)[0m
+    [32m  ✔[0m[90m image support preserves text rendering in a translucent dark detached terminal[0m[31m (132ms)[0m
+    [32m  ✔[0m[90m applies configuration changes when a detached terminal is updated[0m
+[0m    getContentsAsText[0m
+    [32m  ✔[0m[90m should return all buffer contents when no markers provided[0m
+    [32m  ✔[0m[90m should return contents from start marker to end[0m
+    [32m  ✔[0m[90m should return contents from start to end marker[0m
+    [32m  ✔[0m[90m should return single line when start and end markers are the same[0m
+    [32m  ✔[0m[90m should return empty string when start marker is beyond end marker[0m
+    [32m  ✔[0m[90m should handle empty buffer[0m
+    [32m  ✔[0m[90m should handle mixed content with spaces and special characters[0m
+    [32m  ✔[0m[90m should fall back to line 0 when startMarker is disposed (line === -1)[0m
+    [32m  ✔[0m[90m should throw error when endMarker is disposed (line === -1)[0m
+    [32m  ✔[0m[90m should handle markers at buffer boundaries[0m
+    [32m  ✔[0m[90m should handle terminal escape sequences properly[0m
+[0m    getBufferReverseIterator[0m
+    [32m  ✔[0m[90m should get text properly within scrollback limit[0m
+    [32m  ✔[0m[90m should get text properly when exceed scrollback limit[0m
+[0m    theme[0m
+    [32m  ✔[0m[90m should apply correct background color based on getBackgroundColor[0m
+    [32m  ✔[0m[90m should react to and apply theme changes[0m
+
+
+[92m [0m[32m 37 passing[0m[90m (2s)[0m
+

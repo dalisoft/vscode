@@ -1,0 +1,9 @@
+{
+  "contributor": "dalisoft",
+  "ai_disclosure": "AI-assisted fix contributed by @dalisoft. Implementation, investigation, and validation were generated with OpenAI Codex under the contributor's direction.",
+  "validated_source_base": "dab4f45f6cbfbd55ff3de3ac3a328fb7d6d2f642",
+  "pr_source_commit": "fbb0909011bfbd23c268e56740e2dfc8610f47c0",
+  "pr_upstream_base": "dd51f31c3f11b118e922e4ed655994bf6403d0c1",
+  "validation_reuse": "The branch was rebased onto the latest upstream main. The changed terminal files, addon loader, and dependency lockfiles are unchanged between the validated base and the new upstream base.",
+  "platform": "Linux; software WebGL in Chromium. Electron unit tests run under Xvfb with GPU disabled; WebGL is mocked in the unit suite. Renderer captures use the real pinned WebGL and Image addons. Native macOS was not available."
+}
