@@ -11,3 +11,5 @@ See `provenance.json` for exact source commits, environment, and validation boun
 `terminal-image-regression/renderer-comparison/README.md` describes the real WebGL/ImageAddon matrix. Its `metrics.json` contains exact pixel comparisons; observations and all final screenshot captures are retained alongside it. The screenshots show regular, dim, bold, italic, and ANSI-colored text plus Kitty/iTerm/SIXEL image paths, including real partial-alpha and zero-alpha PNG regions.
 
 `manifest.sha256` records the SHA-256 of each proof file.
+
+The published Electron log replaces its absolute local workspace path with `/workspace/vscode`. Test output and results are unchanged. The evidence was checked for credentials, private keys, email addresses, and private settings; none were found.

@@ -1,4 +1,4 @@
-Found --crash-reporter-directory argument. Setting crashDumps directory to be '/home/t3-codex/projects/foss/vscode/.build/crashes'
+Found --crash-reporter-directory argument. Setting crashDumps directory to be '/workspace/vscode/.build/crashes'
 [46229:1009/174729.776001:WARNING:media/gpu/vaapi/vaapi_wrapper.cc:1655] drmGetDevices2() has not found any devices
 
 (code-oss.original:46161): GLib-GIO-CRITICAL **: 17:47:29.813: g_settings_schema_source_lookup: assertion 'source != NULL' failed
