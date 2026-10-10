@@ -23,7 +23,7 @@ jobs:
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 120
     env:
-      SOURCE_COMMIT: 6b7eeb61a080fbb6812bcd95faac6aa9b73d2867
+      SOURCE_COMMIT: bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7
       VSCODE_ARCH: ${{ matrix.arch }}
       npm_config_arch: ${{ matrix.arch }}
       ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
