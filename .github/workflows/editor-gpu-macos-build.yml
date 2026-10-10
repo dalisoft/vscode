@@ -82,6 +82,28 @@ jobs:
       - name: Package Code OSS application
         run: |
           set -o pipefail
+          # Source-built Copilot deps are filtered by the app-root ignore list,
+          # which removes @github/copilot entirely before its SDK shim is prepared.
+          # Keep that dependency for this extension only; app-root pruning is unchanged.
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import { execFileSync } from 'node:child_process';
+          const ignore = fs.readFileSync('build/.moduleignore', 'utf8');
+          if (!ignore.split('\n').includes('@github/copilot/**')) throw Error('Expected source packaging filter changed');
+          fs.writeFileSync('.build/.moduleignore-source-copilot', ignore.split('\n').filter(line => line !== '@github/copilot/**').join('\n'));
+          const file = 'build/lib/extensions.ts';
+          const source = fs.readFileSync(file, 'utf8');
+          const start = source.indexOf('export function packageCopilotExtensionStream()');
+          const end = source.indexOf('export function packageMarketplaceExtensionsStream', start);
+          const section = source.slice(start, end);
+          const changed = section.replace("path.join(root, 'build', '.moduleignore')", "path.join(root, '.build', '.moduleignore-source-copilot')");
+          if (changed === section) throw Error('Expected Copilot packaging call changed');
+          fs.writeFileSync(file, source.slice(0, start) + changed + source.slice(end));
+          fs.writeFileSync('.build/editor-gpu-evidence/packaging-workaround.patch', execFileSync('git', ['diff', '--', file], { encoding: 'utf8' }));
+          const provenance = JSON.parse(fs.readFileSync('.build/editor-gpu-evidence/provenance.json', 'utf8'));
+          provenance.packagingWorkaround = 'Retain source-built Copilot SDK in extension-only dependency filtering; editor and client sources unchanged. See packaging-workaround.patch.';
+          fs.writeFileSync('.build/editor-gpu-evidence/provenance.json', JSON.stringify(provenance, null, 2) + '\n');
+          NODE
           npm run gulp "vscode-darwin-$VSCODE_ARCH" 2>&1 | tee .build/editor-gpu-evidence/package.log
 
       - name: Apply and verify ad hoc code signatures
