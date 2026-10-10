@@ -31,12 +31,13 @@ const { _electron } = require(path.resolve('.build/smoke-tools/node_modules/play
     const cdp = await page.context().newCDPSession(page);
     await cdp.send('Performance.enable');
     async function sample(name) {
-     const native = await app.evaluate(async ({ app, webContents }) => ({ metrics: app.getAppMetrics(), contents: await Promise.all(webContents.getAllWebContents().filter(w => w.getType() === 'window').map(async w => ({ pid: w.getOSProcessId(), memory: await w.getProcessMemoryInfo() }))) }));
+     const native = await app.evaluate(({ app, webContents }) => ({ metrics: app.getAppMetrics(), contents: webContents.getAllWebContents().filter(w => w.getType() === 'window').map(w => ({ pid: w.getOSProcessId() })) }));
      const pids = native.metrics.map(m => m.pid);
      const rss = execFileSync('/bin/ps', ['-p', pids.join(','), '-o', 'pid=,rss=,comm='], { encoding: 'utf8' });
      const metrics = await cdp.send('Performance.getMetrics');
+     const heap = await cdp.send('Runtime.getHeapUsage');
      const surface = await page.evaluate(() => ({ dpr: devicePixelRatio, canvases: [...document.querySelectorAll('.editorCanvas')].map(c => [c.width,c.height]), domChars: [...document.querySelectorAll('.monaco-editor .view-lines')].reduce((n,e) => n + e.textContent.trim().length,0) }));
-     run.samples.push({ name, native, rss, metrics: metrics.metrics.filter(m => /JSHeap|Nodes|Documents|Frames/.test(m.name)), surface });
+     run.samples.push({ name, native, rss, heap, metrics: metrics.metrics.filter(m => /JSHeap|Nodes|Documents|Frames/.test(m.name)), surface });
     }
     await page.waitForTimeout(60000);
     await sample('idle60s');
