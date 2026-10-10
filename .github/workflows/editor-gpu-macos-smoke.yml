@@ -6,6 +6,7 @@ on:
     paths:
       - .github/workflows/editor-gpu-macos-smoke.yml
       - .github/scripts/editor-gpu-macos-smoke.cjs
+      - .github/scripts/editor-gpu-macos-memory.cjs
   workflow_dispatch:
 
 permissions:
@@ -80,6 +81,12 @@ jobs:
           mkdir -p .build/editor-gpu-smoke-evidence
           set -o pipefail
           node .github/scripts/editor-gpu-macos-smoke.cjs 2>&1 | tee .build/editor-gpu-smoke-evidence/smoke.log
+
+      - name: Compare native renderer memory with GPU off and on
+        timeout-minutes: 10
+        run: |
+          set -o pipefail
+          node .github/scripts/editor-gpu-macos-memory.cjs 2>&1 | tee .build/editor-gpu-smoke-evidence/memory.log
 
       - name: Upload packaged workbench evidence
         if: always()
