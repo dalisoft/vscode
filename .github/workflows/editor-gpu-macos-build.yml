@@ -1,0 +1,136 @@
+name: Editor GPU macOS test build
+
+on:
+  push:
+    branches: [build/editor-gpu-macos]
+    paths: [.github/workflows/editor-gpu-macos-build.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Code OSS macOS ${{ matrix.arch }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: arm64
+            runner: macos-15
+          - arch: x64
+            runner: macos-15-intel
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 120
+    env:
+      SOURCE_COMMIT: 6b7eeb61a080fbb6812bcd95faac6aa9b73d2867
+      VSCODE_ARCH: ${{ matrix.arch }}
+      npm_config_arch: ${{ matrix.arch }}
+      ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
+      PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+      GYP_DEFINES: kerberos_use_rtld=false
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Check out exact source commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ env.SOURCE_COMMIT }}
+          persist-credentials: false
+
+      - name: Set up repository Node version
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version-file: .nvmrc
+
+      - name: Record build provenance
+        run: |
+          mkdir -p .build/editor-gpu-evidence
+          node --input-type=module <<'NODE' > .build/editor-gpu-evidence/provenance.json
+          import fs from 'node:fs';
+          import { execFileSync } from 'node:child_process';
+          console.log(JSON.stringify({
+            sourceCommit: process.env.SOURCE_COMMIT,
+            checkedOutCommit: execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(),
+            node: process.version, architecture: process.arch,
+            macOS: execFileSync('sw_vers', [], { encoding: 'utf8' }).trim(),
+            electron: /^target="(.*)"$/m.exec(fs.readFileSync('.npmrc', 'utf8'))[1],
+            run: `https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,
+            signing: 'ad hoc; not Apple notarized',
+            aiAssisted: 'OpenAI Codex under @dalisoft direction'
+          }, null, 2));
+          NODE
+          test "$(uname -m)" = "${{ matrix.arch == 'x64' && 'x86_64' || 'arm64' }}"
+          python3 -m pip install --break-system-packages setuptools
+
+      - name: Install complete dependencies including native modules
+        run: |
+          set -o pipefail
+          npm ci 2>&1 | tee .build/editor-gpu-evidence/install.log
+
+      - name: Build client test output and prepare Electron
+        run: |
+          set -o pipefail
+          npm run build-fast -- --client-only 2>&1 | tee .build/editor-gpu-evidence/client-build.log
+          npm run electron -- "$VSCODE_ARCH" 2>&1 | tee .build/editor-gpu-evidence/electron-setup.log
+
+      - name: Run targeted GPU regression tests on macOS Electron
+        timeout-minutes: 15
+        run: |
+          set -o pipefail
+          VSCODE_SKIP_PRELAUNCH=1 scripts/test.sh --runGlob '**/editor/test/browser/gpu/**/*.test.js' 2>&1 | tee .build/editor-gpu-evidence/tests-electron.log
+
+      - name: Package Code OSS application
+        run: |
+          set -o pipefail
+          npm run gulp "vscode-darwin-$VSCODE_ARCH" 2>&1 | tee .build/editor-gpu-evidence/package.log
+
+      - name: Apply and verify ad hoc code signatures
+        working-directory: build
+        run: |
+          node --input-type=module <<'NODE'
+          import { sign } from '@electron/osx-sign';
+          import path from 'node:path';
+          const root = path.resolve('..');
+          const app = path.resolve('..', '..', `VSCode-darwin-${process.env.VSCODE_ARCH}`, 'Code - OSS.app');
+          await sign({
+            app, platform: 'darwin', identity: '-', identityValidation: false,
+            preAutoEntitlements: false, preEmbedProvisioningProfile: false,
+            optionsForFile: file => {
+              const kind = file.includes(' Helper (GPU).app') ? 'helper-gpu' :
+                file.includes(' Helper (Renderer).app') ? 'helper-renderer' :
+                file.includes(' Helper (Plugin).app') ? 'helper-plugin' :
+                file.includes(' Helper.app') ? 'helper' : 'app';
+              return { hardenedRuntime: false, entitlements: path.join(root, 'build/azure-pipelines/darwin', `${kind}-entitlements.plist`) };
+            }
+          });
+          NODE
+          codesign --verify --deep --strict --verbose=2 "../../VSCode-darwin-$VSCODE_ARCH/Code - OSS.app"
+
+      - name: Smoke test packaged application and create archive
+        run: |
+          set -o pipefail
+          app="../VSCode-darwin-$VSCODE_ARCH/Code - OSS.app"
+          "$app/Contents/Resources/app/bin/code" --version 2>&1 | tee .build/editor-gpu-evidence/app-version.log
+          grep -Fx "$SOURCE_COMMIT" .build/editor-gpu-evidence/app-version.log
+          mkdir -p .build/editor-gpu-artifacts
+          ditto -c -k --sequesterRsrc --keepParent "$app" ".build/editor-gpu-artifacts/Code-OSS-editor-gpu-macos-$VSCODE_ARCH.zip"
+          shasum -a 256 .build/editor-gpu-artifacts/*.zip > .build/editor-gpu-artifacts/SHA256SUMS.txt
+          cp .build/editor-gpu-evidence/provenance.json .build/editor-gpu-artifacts/
+
+      - name: Upload application and checksum
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: Code-OSS-editor-gpu-macos-${{ matrix.arch }}
+          path: .build/editor-gpu-artifacts/
+          retention-days: 30
+          compression-level: 0
+          if-no-files-found: error
+
+      - name: Upload build and test evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: editor-gpu-macos-${{ matrix.arch }}-evidence
+          path: .build/editor-gpu-evidence/
+          retention-days: 30
+          if-no-files-found: warn
