@@ -1,0 +1,58 @@
+{
+  "sourceCommit": "228e79ffc4715b96a7475f63cd34d57939c07864",
+  "previousSourceCommit": "bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7",
+  "pr": "https://github.com/microsoft/vscode/pull/340836",
+  "reviewComments": [
+    4236566347,
+    4236566365
+  ],
+  "platform": "Linux x86_64",
+  "node": "24.18.0",
+  "playwright": "1.61.1",
+  "chromium": "149.0.7827.55 (Playwright revision 1228)",
+  "gpu": "SwiftShader software WebGPU",
+  "nativeDisplayScaleFactors": [
+    1,
+    1.25,
+    2
+  ],
+  "headlessUnitFlags": [
+    "--enable-unsafe-webgpu",
+    "--use-angle=swiftshader",
+    "--enable-unsafe-swiftshader"
+  ],
+  "headedCaptureFlags": [
+    "--enable-unsafe-webgpu",
+    "--enable-features=Vulkan,VulkanFromANGLE",
+    "--enable-unsafe-swiftshader",
+    "--use-angle=swiftshader",
+    "--use-vulkan=swiftshader",
+    "--use-webgpu-adapter=swiftshader",
+    "--disable-vulkan-surface"
+  ],
+  "sourceFileSha256": {
+    "src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.ts": "cf52f9e871b0e8333191ee6079fdd9fbeab957b59e42dd437b263c6bdff1c52c",
+    "src/vs/editor/browser/gpu/renderStrategy/viewportRenderStrategy.ts": "f16f713ccbf50d2f91ca64c830656de62b06e8abe99439281bd870cc7ec5936b",
+    "src/vs/editor/test/browser/gpu/renderStrategy.test.ts": "314d43fd47f47be2da2b4a0fbeb83d9d205690739958141f3dff85744b24da12"
+  },
+  "verification": {
+    "previousCodeNewTests": {
+      "passing": 11,
+      "failing": 4
+    },
+    "fixedGpuSuite": {
+      "passing": 56,
+      "existingPending": 2,
+      "realWebGpuReadback": "passed"
+    },
+    "nativeEditorStates": 18,
+    "liveScaleUniformTransitions": 4,
+    "lintTargets": 3,
+    "diffCheck": "passed"
+  },
+  "macOSBuildScope": "Published Apple Silicon build and previous native Mac observations remain at bdc89a4a; no new macOS build or memory measurement for this follow-up.",
+  "liveScaleScope": "CDP changes real browser devicePixelRatio; the production renderText path checks uniform values. These checks are not native display-scale visual validation.",
+  "initialCaptureFailure": "The unmodified retained harness produced blank top captures with both new and previous strategies. Browser stderr shows missing Vulkan surface extensions and failed WebGPU shared-image creation. Using ANGLE SwiftShader and VulkanFromANGLE resolves the capture environment failure.",
+  "sanitization": "Checkout/home paths and long browser debug URLs removed; generated test fixture only.",
+  "aiAssisted": "Implementation and automated verification by OpenAI Codex under @dalisoft direction."
+}

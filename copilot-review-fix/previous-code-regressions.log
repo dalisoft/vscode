@@ -1,0 +1,166 @@
+npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> code-oss-dev@1.142.0 test-browser-no-install
+> node test/unit/browser/index.js --browser chromium --run src/vs/editor/test/browser/gpu/renderStrategy.test.ts
+
+
+
+  GPU render strategies - /CHROMIUM/
+    ✔ full-file cache restores a line after DOM fallback
+    ✔ full-file cache clears obsolete rows in both buffers after delete and undo
+    ✔ viewport buffer growth destroys each allocation once
+    FullFileRenderStrategy - /CHROMIUM/
+      ✔ draws one instance per cell, limited to the visible lines
+      ✔ uses the same large-scroll origin for cells and scroll offsets
+      1) uploads scroll offsets only on initialization, scrolling, or origin changes
+      2) does not repeat a scroll upload received before the first update
+      ✔ preserves wrapped-line indentation
+      ✔ unregisters its event handler when disposed
+    ViewportRenderStrategy - /CHROMIUM/
+      ✔ draws one instance per cell, limited to the visible lines
+      ✔ uses the same large-scroll origin for cells and scroll offsets
+      3) uploads scroll offsets only on initialization, scrolling, or origin changes
+      4) does not repeat a scroll upload received before the first update
+      ✔ preserves wrapped-line indentation
+      ✔ unregisters its event handler when disposed
+
+
+  11 passing (151ms)
+  4 failing
+
+  1) GPU render strategies
+       FullFileRenderStrategy
+         uploads scroll offsets only on initialization, scrolling, or origin changes:
+
+      
+      + expected - actual
+
+           1
+           40
+         ]
+         [
+      -    2
+      +    1
+           40
+         ]
+         [
+      -    4
+      +    2
+           60
+         ]
+         [
+      -    5
+      +    3
+           1000
+         ]
+         [
+      -    6
+      +    3
+           1000
+         ]
+         [
+      -    7
+      +    4
+           40
+         ]
+         [
+      -    8
+      +    4
+           40
+         ]
+       ]
+      
+  AssertionError: [[1,40],[2,40],[4,60],[5,1000],[6,1000],[7,40],[8,40]] deepStrictEqual [[1,40],[1,40],[2,60],[3,1000],[3,1000],[4,40],[4,40]]
+      at Context.<anonymous> (http://localhost:41643/6eff531a914adc9b946360aebb699e50/out/vs/editor/test/browser/gpu/renderStrategy.test.js:186:9)
+
+  2) GPU render strategies
+       FullFileRenderStrategy
+         does not repeat a scroll upload received before the first update:
+
+      
+      + expected - actual
+
+       [
+      -  2
+      +  1
+         40
+       ]
+      
+  AssertionError: [2,40] deepStrictEqual [1,40]
+      at Context.<anonymous> (http://localhost:41643/6eff531a914adc9b946360aebb699e50/out/vs/editor/test/browser/gpu/renderStrategy.test.js:193:9)
+
+  3) GPU render strategies
+       ViewportRenderStrategy
+         uploads scroll offsets only on initialization, scrolling, or origin changes:
+
+      
+      + expected - actual
+
+           1
+           40
+         ]
+         [
+      -    2
+      +    1
+           40
+         ]
+         [
+      -    4
+      +    2
+           60
+         ]
+         [
+      -    5
+      +    3
+           1000
+         ]
+         [
+      -    6
+      +    3
+           1000
+         ]
+         [
+      -    7
+      +    4
+           40
+         ]
+         [
+      -    8
+      +    4
+           40
+         ]
+       ]
+      
+  AssertionError: [[1,40],[2,40],[4,60],[5,1000],[6,1000],[7,40],[8,40]] deepStrictEqual [[1,40],[1,40],[2,60],[3,1000],[3,1000],[4,40],[4,40]]
+      at Context.<anonymous> (http://localhost:41643/6eff531a914adc9b946360aebb699e50/out/vs/editor/test/browser/gpu/renderStrategy.test.js:186:9)
+
+  4) GPU render strategies
+       ViewportRenderStrategy
+         does not repeat a scroll upload received before the first update:
+
+      
+      + expected - actual
+
+       [
+      -  2
+      +  1
+         40
+       ]
+      
+  AssertionError: [2,40] deepStrictEqual [1,40]
+      at Context.<anonymous> (http://localhost:41643/6eff531a914adc9b946360aebb699e50/out/vs/editor/test/browser/gpu/renderStrategy.test.js:193:9)
+
+
+
+The followings tests are failing:
+ - GPU render strategies FullFileRenderStrategy uploads scroll offsets only on initialization, scrolling, or origin changes (reason: [[1,40],[2,40],[4,60],[5,1000],[6,1000],[7,40],[8,40]] deepStrictEqual [[1,40],[1,40],[2,60],[3,1000],[3,1000],[4,40],[4,40]])
+ - GPU render strategies FullFileRenderStrategy does not repeat a scroll upload received before the first update (reason: [2,40] deepStrictEqual [1,40])
+ - GPU render strategies ViewportRenderStrategy uploads scroll offsets only on initialization, scrolling, or origin changes (reason: [[1,40],[2,40],[4,60],[5,1000],[6,1000],[7,40],[8,40]] deepStrictEqual [[1,40],[1,40],[2,60],[3,1000],[3,1000],[4,40],[4,40]])
+ - GPU render strategies ViewportRenderStrategy does not repeat a scroll upload received before the first update (reason: [2,40] deepStrictEqual [1,40])
+
+

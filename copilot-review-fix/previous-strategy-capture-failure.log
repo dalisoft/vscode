@@ -1,0 +1,3 @@
+GPU diagnostics {"errors":[],"gpuErrors":[],"renderer":{"initialized":true,"count":6000,"scroll":[0,0],"contextScroll":0}}
+Error: GPU capture failed: {"devicePixelRatio":1,"domText":"","scrollTop":0,"canvas":[1086,713],"atlas":[1024,1024,1],"strategy":"fullfile","visible":[1,30],"delta":0}, ink=0
+    at <checkout>/.agent-validation/publish/copilot-diagnose.cjs:108:91

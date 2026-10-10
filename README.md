@@ -117,3 +117,7 @@ A diagnostic run (38027061717, workflow `620962cd`) uses the same packaged sourc
 | afterExplicitGC | 624.8 / 1002.8 | 86.5 / 175.7 | 71.3 / 81.0 | 41.3 / 68.7 |
 
 This reproduces a substantial renderer increase without a similarly large JS-heap increase. Much of the difference remains after explicit GC, making native backing stores, driver/allocator caches and staging storage profiling candidates. Renderer RSS declines during the limited scrolling sequence; this is not a general leak test. GPU helper RSS grows during scrolling. The single run does not establish physical/unified-memory acceptance or performance. Off/on order, the virtualized Apple runner and its workload differ from the contributor's Mac. The first collector attempt failed because a removed Electron WebContents API was called; its error is retained under `automation-attempt1`. The corrected collector uses `app.getAppMetrics`, `ps` RSS and CDP heap metrics.
+
+## Copilot review follow-up
+
+The original artifacts above remain tied to `bdc89a4a`. [copilot-review-fix](copilot-review-fix/README.md) records the review follow-up at source `228e79ffc4715b96a7475f63cd34d57939c07864`: four new regression failures on the previous code, 56 passing GPU tests, 18 native-scale editor captures, four live pixel-ratio uniform checks, lint and source hashes. macOS archives and memory measurements have not been regenerated for this follow-up.

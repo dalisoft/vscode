@@ -1,0 +1,2 @@
+Error: GPU capture failed: {"devicePixelRatio":1,"domText":"","scrollTop":0,"canvas":[1086,713],"atlas":[1024,1024,1],"strategy":"fullfile","visible":[1,30],"delta":0}, ink=0
+    at <checkout>/.agent-validation/publish/integrated-editor.cjs:107:91

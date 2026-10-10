@@ -1,0 +1,2 @@
+git diff bdc89a4a..228e79ffc4715b96a7475f63cd34d57939c07864 --check
+Exit status: 0

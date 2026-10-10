@@ -1,0 +1,155 @@
+diff --git a/src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.ts b/src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.ts
+index 6be6c83c..e52a6fd2 100644
+--- a/src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.ts
++++ b/src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.ts
+@@ -82,6 +82,7 @@ export class FullFileRenderStrategy extends BaseRenderStrategy {
+ 
+ 	private _scrollOffsetBindBuffer: GPUBuffer;
+ 	private _scrollOffsetValueBuffer: Float32Array;
++	private _scrollDevicePixelRatio: number | undefined;
+ 	private _bigNumbersDelta = 0;
+ 
+ 	private readonly _queuedBufferUpdates: [QueuedBufferEvent[], QueuedBufferEvent[]] = [[], []];
+@@ -179,6 +180,7 @@ export class FullFileRenderStrategy extends BaseRenderStrategy {
+ 		this._scrollOffsetValueBuffer[0] = (e?.scrollLeft ?? this._context.viewLayout.getCurrentScrollLeft()) * dpr;
+ 		this._scrollOffsetValueBuffer[1] = ((e?.scrollTop ?? this._context.viewLayout.getCurrentScrollTop()) - this._bigNumbersDelta) * dpr;
+ 		this._device.queue.writeBuffer(this._scrollOffsetBindBuffer, 0, this._scrollOffsetValueBuffer as Float32Array<ArrayBuffer>);
++		this._scrollDevicePixelRatio = dpr;
+ 		return true;
+ 	}
+ 
+@@ -276,12 +278,15 @@ export class FullFileRenderStrategy extends BaseRenderStrategy {
+ 		const dpr = getActiveWindow().devicePixelRatio;
+ 		let contentSegmenter: IContentSegmenter;
+ 
+-		if (this._bigNumbersDelta !== viewportData.bigNumbersDelta) {
++		const scrollOriginChanged = this._bigNumbersDelta !== viewportData.bigNumbersDelta;
++		if (scrollOriginChanged) {
+ 			this._bigNumbersDelta = viewportData.bigNumbersDelta;
+ 			this._invalidateAllLines();
+ 			this._queueBufferUpdate(new ViewLineMappingChangedEvent());
+ 		}
+-		this.onScrollChanged();
++		if (this._scrollDevicePixelRatio !== dpr || scrollOriginChanged) {
++			this.onScrollChanged();
++		}
+ 
+ 		// Update cell data
+ 		const cellBuffer = new Float32Array(this._cellValueBuffers[this._activeDoubleBufferIndex]);
+diff --git a/src/vs/editor/browser/gpu/renderStrategy/viewportRenderStrategy.ts b/src/vs/editor/browser/gpu/renderStrategy/viewportRenderStrategy.ts
+index 0c74f20c..33dd304e 100644
+--- a/src/vs/editor/browser/gpu/renderStrategy/viewportRenderStrategy.ts
++++ b/src/vs/editor/browser/gpu/renderStrategy/viewportRenderStrategy.ts
+@@ -71,6 +71,7 @@ export class ViewportRenderStrategy extends BaseRenderStrategy {
+ 
+ 	private _scrollOffsetBindBuffer: GPUBuffer;
+ 	private _scrollOffsetValueBuffer: Float32Array;
++	private _scrollDevicePixelRatio: number | undefined;
+ 	private _bigNumbersDelta = 0;
+ 
+ 	get bindGroupEntries(): GPUBindGroupEntry[] {
+@@ -165,6 +166,7 @@ export class ViewportRenderStrategy extends BaseRenderStrategy {
+ 		this._scrollOffsetValueBuffer[0] = (e?.scrollLeft ?? this._context.viewLayout.getCurrentScrollLeft()) * dpr;
+ 		this._scrollOffsetValueBuffer[1] = ((e?.scrollTop ?? this._context.viewLayout.getCurrentScrollTop()) - this._bigNumbersDelta) * dpr;
+ 		this._device.queue.writeBuffer(this._scrollOffsetBindBuffer, 0, this._scrollOffsetValueBuffer as Float32Array<ArrayBuffer>);
++		this._scrollDevicePixelRatio = dpr;
+ 		return true;
+ 	}
+ 
+@@ -231,8 +233,10 @@ export class ViewportRenderStrategy extends BaseRenderStrategy {
+ 		let contentSegmenter: IContentSegmenter;
+ 
+ 		// Line offsets and scrollTop must use the same origin in very large files.
+-		this._bigNumbersDelta = viewportData.bigNumbersDelta;
+-		this.onScrollChanged();
++		if (this._scrollDevicePixelRatio !== dpr || this._bigNumbersDelta !== viewportData.bigNumbersDelta) {
++			this._bigNumbersDelta = viewportData.bigNumbersDelta;
++			this.onScrollChanged();
++		}
+ 
+ 		// Zero out cell buffer or rebuild if needed
+ 		if (this._cellBindBufferLineCapacity < viewportData.endLineNumber - viewportData.startLineNumber + 1) {
+diff --git a/src/vs/editor/test/browser/gpu/renderStrategy.test.ts b/src/vs/editor/test/browser/gpu/renderStrategy.test.ts
+index 6f32c0a3..c9481411 100644
+--- a/src/vs/editor/test/browser/gpu/renderStrategy.test.ts
++++ b/src/vs/editor/test/browser/gpu/renderStrategy.test.ts
+@@ -5,6 +5,7 @@
+ 
+ import { deepStrictEqual, strictEqual } from 'assert';
+ import { getActiveWindow } from '../../../../base/browser/dom.js';
++import type { ScrollEvent } from '../../../../base/common/scrollable.js';
+ import { mock } from '../../../../base/test/common/mock.js';
+ import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../base/test/common/utils.js';
+ import { TextureAtlas } from '../../../browser/gpu/atlas/textureAtlas.js';
+@@ -17,7 +18,7 @@ import { TextDirection } from '../../../common/model.js';
+ import { LanguageIdCodec } from '../../../common/services/languagesRegistry.js';
+ import { LineTokens } from '../../../common/tokens/lineTokens.js';
+ import { ViewEventHandler } from '../../../common/viewEventHandler.js';
+-import { ViewLinesDeletedEvent, ViewLinesInsertedEvent } from '../../../common/viewEvents.js';
++import { ViewLinesDeletedEvent, ViewLinesInsertedEvent, ViewScrollChangedEvent } from '../../../common/viewEvents.js';
+ import { ViewportData } from '../../../common/viewLayout/viewLinesViewportData.js';
+ import { IViewLayout, ViewLineRenderingData } from '../../../common/viewModel.js';
+ import { ViewContext } from '../../../common/viewModel/viewContext.js';
+@@ -25,6 +26,7 @@ import { ViewContext } from '../../../common/viewModel/viewContext.js';
+ class TestBuffer extends mock<GPUBuffer>() {
+ 	readonly data: Uint8Array;
+ 	destroyCount = 0;
++	writeCount = 0;
+ 	constructor(override readonly size: number, override readonly label: string) {
+ 		super();
+ 		this.data = new Uint8Array(size);
+@@ -36,6 +38,7 @@ class TestDevice extends mock<GPUDevice>() {
+ 	readonly buffers: TestBuffer[] = [];
+ 	override readonly queue = new class extends mock<GPUQueue>() {
+ 		override writeBuffer(buffer: GPUBuffer, bufferOffset: number, data: GPUAllowSharedBufferSource, dataOffset = 0, size?: number): undefined {
++			(buffer as TestBuffer).writeCount++;
+ 			const bytesPerElement = data instanceof Float32Array ? Float32Array.BYTES_PER_ELEMENT : 1;
+ 			const bytes = ArrayBuffer.isView(data) ? new Uint8Array(data.buffer, data.byteOffset, data.byteLength) : new Uint8Array(data);
+ 			(buffer as TestBuffer).data.set(bytes.subarray(dataOffset * bytesPerElement, size === undefined ? undefined : (dataOffset + size) * bytesPerElement), bufferOffset);
+@@ -137,6 +140,46 @@ suite('GPU render strategies', () => {
+ 				strictEqual(new Float32Array(device.getBuffer('Monaco scroll offset buffer').data.buffer)[1], 40 * getActiveWindow().devicePixelRatio);
+ 			});
+ 
++			test('uploads scroll offsets only on initialization, scrolling, or origin changes', () => {
++				const buffer = device.getBuffer('Monaco scroll offset buffer');
++				const dpr = getActiveWindow().devicePixelRatio;
++				const snapshots: number[][] = [];
++				const capture = () => snapshots.push([buffer.writeCount, new Float32Array(buffer.data.buffer)[1]]);
++				const viewport = new TestViewport(3, ['a']);
++				context.scrollTop = 40;
++				strategy.update(viewport, options);
++				capture();
++				strategy.update(viewport, options);
++				capture();
++				context.scrollTop = 60;
++				strategy.onScrollChanged(new ViewScrollChangedEvent(new class extends mock<ScrollEvent>() {
++					override scrollLeft = 0;
++					override scrollTop = 60;
++				}));
++				strategy.update(new TestViewport(4, ['a']), options);
++				capture();
++				const largeViewport = new TestViewport(1002, ['a'], 1_000_000, 1, 1000);
++				context.scrollTop = 1_001_000;
++				strategy.update(largeViewport, options);
++				capture();
++				strategy.update(largeViewport, options);
++				capture();
++				context.scrollTop = 40;
++				strategy.update(viewport, options);
++				capture();
++				strategy.update(viewport, options);
++				capture();
++				deepStrictEqual(snapshots, [[1, 40 * dpr], [1, 40 * dpr], [2, 60 * dpr], [3, 1000 * dpr], [3, 1000 * dpr], [4, 40 * dpr], [4, 40 * dpr]]);
++			});
++
++			test('does not repeat a scroll upload received before the first update', () => {
++				context.scrollTop = 40;
++				strategy.onScrollChanged();
++				strategy.update(new TestViewport(3, ['a']), options);
++				const buffer = device.getBuffer('Monaco scroll offset buffer');
++				deepStrictEqual([buffer.writeCount, new Float32Array(buffer.data.buffer)[1]], [1, 40 * getActiveWindow().devicePixelRatio]);
++			});
++
+ 			test('preserves wrapped-line indentation', () => {
+ 				strategy.update(new TestViewport(1, ['    a'], 0, 5), options);
+ 				const cells = new Float32Array(device.getBuffer('Monaco full file cell buffer').data.buffer);

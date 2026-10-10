@@ -1,0 +1,194 @@
+[
+  {
+    "dpr": 1,
+    "snapshots": [
+      {
+        "name": "top",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 0,
+        "canvas": [
+          1086,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          1
+        ],
+        "strategy": "fullfile",
+        "visible": [
+          1,
+          30
+        ],
+        "delta": 0,
+        "ink": 26349
+      },
+      {
+        "name": "line50000",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          1086,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          8
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 29508
+      },
+      {
+        "name": "delete",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          1086,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          8
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 29490
+      },
+      {
+        "name": "undo",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          1086,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          8
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 29508
+      },
+      {
+        "name": "resize",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          786,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          8
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 29508
+      },
+      {
+        "name": "return",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 2019,
+        "canvas": [
+          786,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          8
+        ],
+        "strategy": "viewport",
+        "visible": [
+          85,
+          114
+        ],
+        "delta": 0,
+        "ink": 27309
+      }
+    ],
+    "scaleTransitions": [
+      {
+        "strategy": "fullfile",
+        "ratio": 2,
+        "uploadedRatio": 2,
+        "scroll": [
+          0,
+          4038
+        ],
+        "expected": [
+          0,
+          4038
+        ]
+      },
+      {
+        "strategy": "fullfile",
+        "ratio": 1,
+        "uploadedRatio": 1,
+        "scroll": [
+          0,
+          2019
+        ],
+        "expected": [
+          0,
+          2019
+        ]
+      },
+      {
+        "strategy": "viewport",
+        "ratio": 2,
+        "uploadedRatio": 2,
+        "scroll": [
+          0,
+          399270
+        ],
+        "expected": [
+          0,
+          399270
+        ]
+      },
+      {
+        "strategy": "viewport",
+        "ratio": 1,
+        "uploadedRatio": 1,
+        "scroll": [
+          0,
+          199635
+        ],
+        "expected": [
+          0,
+          199635
+        ]
+      }
+    ],
+    "errors": []
+  }
+]
