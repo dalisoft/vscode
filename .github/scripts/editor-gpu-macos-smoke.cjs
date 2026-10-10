@@ -55,6 +55,7 @@ const { _electron } = require(path.resolve('.build/smoke-tools/node_modules/play
 			const adapter = await navigator.gpu?.requestAdapter();
 			return adapter ? { vendor: adapter.info.vendor, architecture: adapter.info.architecture, device: adapter.info.device, description: adapter.info.description } : null;
 		});
+		if (!results.adapter || results.gpuFeatureStatus.webgpu !== 'enabled') throw Error('Native WebGPU adapter unavailable; GPU verification cannot pass');
 		for (const name of ['top', 'line50000']) {
 			if (name === 'line50000') {
 				await page.keyboard.press('Control+g');
@@ -76,13 +77,14 @@ const { _electron } = require(path.resolve('.build/smoke-tools/node_modules/play
 					rect: { left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom } };
 			});
 			const png = await page.screenshot({ path: path.join(evidence, `${name}.png`) });
+			// Measure the upper text region only, excluding gutter and notification overlays.
 			const ink = await page.evaluate(async ({ png, rect }) => {
 				const bitmap = await createImageBitmap(new Blob([Uint8Array.from(atob(png), c => c.charCodeAt(0))], { type: 'image/png' }));
 				const canvas = new OffscreenCanvas(bitmap.width, bitmap.height);
 				const ctx = canvas.getContext('2d'); ctx.drawImage(bitmap, 0, 0);
 				const pixels = ctx.getImageData(0, 0, bitmap.width, bitmap.height).data;
 				let ink = 0;
-				for (let y = Math.ceil(rect.top * devicePixelRatio); y < Math.min(bitmap.height, Math.floor((rect.bottom - 20) * devicePixelRatio)); y++) {
+				for (let y = Math.ceil(rect.top * devicePixelRatio); y < Math.min(bitmap.height, Math.floor(Math.min(rect.bottom - 20, rect.top + 300) * devicePixelRatio)); y++) {
 					for (let x = Math.ceil((rect.left + 120) * devicePixelRatio); x < Math.min(bitmap.width, Math.floor((rect.right - 30) * devicePixelRatio)); x++) {
 						const offset = (y * bitmap.width + x) * 4;
 						if (pixels[offset] < 150 && pixels[offset + 1] < 150 && pixels[offset + 2] < 150) ink++;
@@ -91,7 +93,7 @@ const { _electron } = require(path.resolve('.build/smoke-tools/node_modules/play
 				bitmap.close(); return ink;
 			}, { png: png.toString('base64'), rect: state.rect });
 			results.snapshots.push({ name, ...state, ink });
-			if (!ink || state.domText) throw Error(`Packaged GPU capture failed: ${JSON.stringify(state)}, ink=${ink}`);
+			if (ink < 1000 || state.domText) throw Error(`Packaged GPU capture failed: ${JSON.stringify(state)}, ink=${ink}`);
 		}
 		if (errors.length) throw Error(errors.join('\n'));
 		console.log(JSON.stringify(results, null, 2));
