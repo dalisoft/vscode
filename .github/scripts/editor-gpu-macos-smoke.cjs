@@ -48,7 +48,7 @@ const { _electron } = require(path.resolve('.build/smoke-tools/node_modules/play
 			if (message.type() === 'error' && /GPUValidation|WebGPU|GPUDevice|shader/i.test(message.text())) errors.push(message.text());
 		});
 		await page.locator('.monaco-workbench').waitFor({ timeout: 90000 });
-		await page.waitForFunction(() => document.querySelector('.editorCanvas')?.width > 0, { timeout: 90000 });
+		await page.waitForFunction(() => document.querySelector('.editorCanvas')?.width > 0, undefined, { timeout: 90000 });
 		results.electron = await app.evaluate(() => process.versions.electron);
 		results.gpuFeatureStatus = await app.evaluate(({ app }) => app.getGPUFeatureStatus());
 		results.adapter = await page.evaluate(async () => {
@@ -60,8 +60,9 @@ const { _electron } = require(path.resolve('.build/smoke-tools/node_modules/play
 				await page.keyboard.press('Control+g');
 				const input = page.locator('.quick-input-widget input').first();
 				await input.waitFor({ state: 'visible' });
-				await input.fill('50000');
-				await page.keyboard.press('Enter');
+				// Quick access dispatches by prefix; keep ':' to select Go to Line.
+				await input.fill(':50000');
+				await input.press('Enter');
 				await page.waitForFunction(() => Array.from(document.querySelectorAll('.line-numbers')).some(node => node.textContent.trim() === '50000'));
 			}
 			await page.waitForTimeout(1000);
