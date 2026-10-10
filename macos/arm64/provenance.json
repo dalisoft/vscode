@@ -1,0 +1,12 @@
+{
+  "sourceCommit": "bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7",
+  "checkedOutCommit": "bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7",
+  "node": "v24.18.0",
+  "architecture": "arm64",
+  "macOS": "ProductName:\t\tmacOS\nProductVersion:\t\t15.7.9\nBuildVersion:\t\t24G830",
+  "electron": "43.7.7",
+  "run": "https://github.com/dalisoft/vscode/actions/runs/38025104064",
+  "signing": "ad hoc; not Apple notarized",
+  "aiAssisted": "OpenAI Codex under @dalisoft direction",
+  "packagingWorkaround": "Retain source-built Copilot SDK in extension-only dependency filtering; editor and client sources unchanged. See packaging-workaround.patch."
+}

@@ -1,0 +1,10 @@
+electronApplication.evaluate: TypeError: w.getProcessMemoryInfo is not a function
+    at eval (eval at evaluate (:303:30), <anonymous>:1:223)
+    at Array.map (<anonymous>)
+    at eval (eval at evaluate (:303:30), <anonymous>:1:164)
+    at UtilityScript.evaluate (<anonymous>:305:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at sample (<checkout>/.github/scripts/editor-gpu-macos-memory.cjs:34:31)
+    at <checkout>/.github/scripts/editor-gpu-macos-memory.cjs:42:11 {
+  log: []
+}

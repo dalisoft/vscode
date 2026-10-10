@@ -1,0 +1,1095 @@
+{
+  "sourceCommit": "bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7",
+  "workload": "1800 generated JSON settings, Menlo 14, Quiet Light, forced native scale 2; isolated fresh processes for each mode",
+  "runs": [
+    {
+      "mode": "off",
+      "samples": [
+        {
+          "name": "idle60s",
+          "native": {
+            "metrics": [
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 3.149362,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32085,
+                "type": "Browser",
+                "creationTime": 1791609586742.116,
+                "memory": {
+                  "workingSetSize": 192496,
+                  "peakWorkingSetSize": 250832
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 2.193682,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32087,
+                "type": "GPU",
+                "creationTime": 1791609587192.037,
+                "serviceName": "GPU",
+                "memory": {
+                  "workingSetSize": 84560,
+                  "peakWorkingSetSize": 88720
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.115945,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32088,
+                "type": "Utility",
+                "creationTime": 1791609587233.513,
+                "serviceName": "network.mojom.NetworkService",
+                "name": "Network Service",
+                "memory": {
+                  "workingSetSize": 33216,
+                  "peakWorkingSetSize": 36240
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 9.480048,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32089,
+                "type": "Tab",
+                "creationTime": 1791609587711.816,
+                "memory": {
+                  "workingSetSize": 646160,
+                  "peakWorkingSetSize": 743840
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.07614,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32109,
+                "type": "Utility",
+                "creationTime": 1791609590419.435,
+                "serviceName": "node.mojom.NodeService",
+                "name": "agentHost-1",
+                "memory": {
+                  "workingSetSize": 147392,
+                  "peakWorkingSetSize": 168192
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.596427,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32125,
+                "type": "Utility",
+                "creationTime": 1791609591342.837,
+                "serviceName": "node.mojom.NodeService",
+                "name": "extensionHost-2",
+                "memory": {
+                  "workingSetSize": 143344,
+                  "peakWorkingSetSize": 165728
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.805112,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32126,
+                "type": "Utility",
+                "creationTime": 1791609591476.594,
+                "serviceName": "node.mojom.NodeService",
+                "name": "shared-process-3",
+                "memory": {
+                  "workingSetSize": 101632,
+                  "peakWorkingSetSize": 224512
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.308581,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32127,
+                "type": "Utility",
+                "creationTime": 1791609591479.693,
+                "serviceName": "node.mojom.NodeService",
+                "name": "fileWatcher-4",
+                "memory": {
+                  "workingSetSize": 74048,
+                  "peakWorkingSetSize": 80848
+                },
+                "sandboxed": false
+              }
+            ],
+            "contents": [
+              {
+                "pid": 32089
+              }
+            ]
+          },
+          "rss": "32085 192752 <checkout>/.build/macos-app/Code - OSS.app/Contents/MacOS/Code - OSS\n32087  84560 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32088  33216 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32089 646160 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Renderer).app/Contents/MacOS/Code - OSS Helper (Renderer)\n32109 147392 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32125 143344 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Plugin).app/Contents/MacOS/Code - OSS Helper (Plugin)\n32126 101632 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32127  74048 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n",
+          "heap": {
+            "usedSize": 73582296,
+            "totalSize": 77365248,
+            "embedderHeapUsedSize": 9675304,
+            "backingStorageSize": 45702048
+          },
+          "metrics": [
+            {
+              "name": "Documents",
+              "value": 4
+            },
+            {
+              "name": "Frames",
+              "value": 3
+            },
+            {
+              "name": "Nodes",
+              "value": 2021
+            },
+            {
+              "name": "JSHeapUsedSize",
+              "value": 73582296
+            },
+            {
+              "name": "JSHeapTotalSize",
+              "value": 77365248
+            }
+          ],
+          "surface": {
+            "dpr": 2,
+            "canvases": [],
+            "domChars": 823
+          }
+        },
+        {
+          "name": "after5Scrolls",
+          "native": {
+            "metrics": [
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 3.322718,
+                  "percentCPUUsage": 0.9590934653611054,
+                  "idleWakeupsPerSecond": 4
+                },
+                "pid": 32085,
+                "type": "Browser",
+                "creationTime": 1791609586742.116,
+                "memory": {
+                  "workingSetSize": 192672,
+                  "peakWorkingSetSize": 250832
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 3.216417,
+                  "percentCPUUsage": 5.658547893788701,
+                  "idleWakeupsPerSecond": 120
+                },
+                "pid": 32087,
+                "type": "GPU",
+                "creationTime": 1791609587192.037,
+                "serviceName": "GPU",
+                "memory": {
+                  "workingSetSize": 89216,
+                  "peakWorkingSetSize": 89664
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.117167,
+                  "percentCPUUsage": 0.006761007620297386,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32088,
+                "type": "Utility",
+                "creationTime": 1791609587233.513,
+                "serviceName": "network.mojom.NetworkService",
+                "name": "Network Service",
+                "memory": {
+                  "workingSetSize": 33168,
+                  "peakWorkingSetSize": 36240
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 10.92984,
+                  "percentCPUUsage": 8.021332058588468,
+                  "idleWakeupsPerSecond": 10
+                },
+                "pid": 32089,
+                "type": "Tab",
+                "creationTime": 1791609587711.816,
+                "memory": {
+                  "workingSetSize": 647152,
+                  "peakWorkingSetSize": 743840
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.082192,
+                  "percentCPUUsage": 0.03348407251968476,
+                  "idleWakeupsPerSecond": 1
+                },
+                "pid": 32109,
+                "type": "Utility",
+                "creationTime": 1791609590419.435,
+                "serviceName": "node.mojom.NodeService",
+                "name": "agentHost-1",
+                "memory": {
+                  "workingSetSize": 136784,
+                  "peakWorkingSetSize": 168192
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.627007,
+                  "percentCPUUsage": 0.1691903021313884,
+                  "idleWakeupsPerSecond": 3
+                },
+                "pid": 32125,
+                "type": "Utility",
+                "creationTime": 1791609591342.837,
+                "serviceName": "node.mojom.NodeService",
+                "name": "extensionHost-2",
+                "memory": {
+                  "workingSetSize": 143520,
+                  "peakWorkingSetSize": 165728
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.806572,
+                  "percentCPUUsage": 0.008077751344350832,
+                  "idleWakeupsPerSecond": 1
+                },
+                "pid": 32126,
+                "type": "Utility",
+                "creationTime": 1791609591476.594,
+                "serviceName": "node.mojom.NodeService",
+                "name": "shared-process-3",
+                "memory": {
+                  "workingSetSize": 101664,
+                  "peakWorkingSetSize": 224512
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.314353,
+                  "percentCPUUsage": 0.03193473893765871,
+                  "idleWakeupsPerSecond": 3
+                },
+                "pid": 32127,
+                "type": "Utility",
+                "creationTime": 1791609591479.693,
+                "serviceName": "node.mojom.NodeService",
+                "name": "fileWatcher-4",
+                "memory": {
+                  "workingSetSize": 74080,
+                  "peakWorkingSetSize": 80848
+                },
+                "sandboxed": false
+              }
+            ],
+            "contents": [
+              {
+                "pid": 32089
+              }
+            ]
+          },
+          "rss": "32085 192688 <checkout>/.build/macos-app/Code - OSS.app/Contents/MacOS/Code - OSS\n32087  89216 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32088  33168 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32089 647152 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Renderer).app/Contents/MacOS/Code - OSS Helper (Renderer)\n32109 136784 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32125 143520 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Plugin).app/Contents/MacOS/Code - OSS Helper (Plugin)\n32126 101664 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32127  74080 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n",
+          "heap": {
+            "usedSize": 76349132,
+            "totalSize": 83656704,
+            "embedderHeapUsedSize": 12509800,
+            "backingStorageSize": 43291899
+          },
+          "metrics": [
+            {
+              "name": "Documents",
+              "value": 4
+            },
+            {
+              "name": "Frames",
+              "value": 3
+            },
+            {
+              "name": "Nodes",
+              "value": 2982
+            },
+            {
+              "name": "JSHeapUsedSize",
+              "value": 76349132
+            },
+            {
+              "name": "JSHeapTotalSize",
+              "value": 83656704
+            }
+          ],
+          "surface": {
+            "dpr": 2,
+            "canvases": [],
+            "domChars": 950
+          }
+        },
+        {
+          "name": "afterExplicitGC",
+          "native": {
+            "metrics": [
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 3.352024,
+                  "percentCPUUsage": 0.18674504019421587,
+                  "idleWakeupsPerSecond": 2
+                },
+                "pid": 32085,
+                "type": "Browser",
+                "creationTime": 1791609586742.116,
+                "memory": {
+                  "workingSetSize": 192688,
+                  "peakWorkingSetSize": 250832
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 3.36031,
+                  "percentCPUUsage": 0.91679872969732,
+                  "idleWakeupsPerSecond": 70
+                },
+                "pid": 32087,
+                "type": "GPU",
+                "creationTime": 1791609587192.037,
+                "serviceName": "GPU",
+                "memory": {
+                  "workingSetSize": 88544,
+                  "peakWorkingSetSize": 89664
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.118176,
+                  "percentCPUUsage": 0.006428604422612249,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32088,
+                "type": "Utility",
+                "creationTime": 1791609587233.513,
+                "serviceName": "network.mojom.NetworkService",
+                "name": "Network Service",
+                "memory": {
+                  "workingSetSize": 33168,
+                  "peakWorkingSetSize": 36240
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 11.430828,
+                  "percentCPUUsage": 3.191776868428748,
+                  "idleWakeupsPerSecond": 10
+                },
+                "pid": 32089,
+                "type": "Tab",
+                "creationTime": 1791609587711.816,
+                "memory": {
+                  "workingSetSize": 639808,
+                  "peakWorkingSetSize": 743840
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.087074,
+                  "percentCPUUsage": 0.031102597926994647,
+                  "idleWakeupsPerSecond": 1
+                },
+                "pid": 32109,
+                "type": "Utility",
+                "creationTime": 1791609590419.435,
+                "serviceName": "node.mojom.NodeService",
+                "name": "agentHost-1",
+                "memory": {
+                  "workingSetSize": 136800,
+                  "peakWorkingSetSize": 168192
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.628074,
+                  "percentCPUUsage": 0.006797147695139453,
+                  "idleWakeupsPerSecond": 1
+                },
+                "pid": 32125,
+                "type": "Utility",
+                "creationTime": 1791609591342.837,
+                "serviceName": "node.mojom.NodeService",
+                "name": "extensionHost-2",
+                "memory": {
+                  "workingSetSize": 143520,
+                  "peakWorkingSetSize": 165728
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.807416,
+                  "percentCPUUsage": 0.0053764982051796575,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 32126,
+                "type": "Utility",
+                "creationTime": 1791609591476.594,
+                "serviceName": "node.mojom.NodeService",
+                "name": "shared-process-3",
+                "memory": {
+                  "workingSetSize": 101664,
+                  "peakWorkingSetSize": 224512
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.317639,
+                  "percentCPUUsage": 0.020932597545522347,
+                  "idleWakeupsPerSecond": 3
+                },
+                "pid": 32127,
+                "type": "Utility",
+                "creationTime": 1791609591479.693,
+                "serviceName": "node.mojom.NodeService",
+                "name": "fileWatcher-4",
+                "memory": {
+                  "workingSetSize": 74080,
+                  "peakWorkingSetSize": 80848
+                },
+                "sandboxed": false
+              }
+            ],
+            "contents": [
+              {
+                "pid": 32089
+              }
+            ]
+          },
+          "rss": "32085 192688 <checkout>/.build/macos-app/Code - OSS.app/Contents/MacOS/Code - OSS\n32087  88544 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32088  33168 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32089 639808 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Renderer).app/Contents/MacOS/Code - OSS Helper (Renderer)\n32109 136800 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32125 143520 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Plugin).app/Contents/MacOS/Code - OSS Helper (Plugin)\n32126 101664 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n32127  74080 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n",
+          "heap": {
+            "usedSize": 74769948,
+            "totalSize": 77103104,
+            "embedderHeapUsedSize": 9404952,
+            "backingStorageSize": 43278065
+          },
+          "metrics": [
+            {
+              "name": "Documents",
+              "value": 4
+            },
+            {
+              "name": "Frames",
+              "value": 3
+            },
+            {
+              "name": "Nodes",
+              "value": 2186
+            },
+            {
+              "name": "JSHeapUsedSize",
+              "value": 74769948
+            },
+            {
+              "name": "JSHeapTotalSize",
+              "value": 77103104
+            }
+          ],
+          "surface": {
+            "dpr": 2,
+            "canvases": [],
+            "domChars": 950
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "mode": "on",
+      "samples": [
+        {
+          "name": "idle60s",
+          "native": {
+            "metrics": [
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 3.913638,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 34302,
+                "type": "Browser",
+                "creationTime": 1791609664883.32,
+                "memory": {
+                  "workingSetSize": 189136,
+                  "peakWorkingSetSize": 252992
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 2.492035,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 34303,
+                "type": "GPU",
+                "creationTime": 1791609665312.776,
+                "serviceName": "GPU",
+                "memory": {
+                  "workingSetSize": 149904,
+                  "peakWorkingSetSize": 212432
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.144331,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 34304,
+                "type": "Utility",
+                "creationTime": 1791609665333.983,
+                "serviceName": "network.mojom.NetworkService",
+                "name": "Network Service",
+                "memory": {
+                  "workingSetSize": 33648,
+                  "peakWorkingSetSize": 36016
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 14.037077,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 34306,
+                "type": "Tab",
+                "creationTime": 1791609665869.006,
+                "memory": {
+                  "workingSetSize": 1075392,
+                  "peakWorkingSetSize": 1146080
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.321233,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 34593,
+                "type": "Utility",
+                "creationTime": 1791609669385.304,
+                "serviceName": "node.mojom.NodeService",
+                "name": "agentHost-1",
+                "memory": {
+                  "workingSetSize": 136848,
+                  "peakWorkingSetSize": 167408
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.932214,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 34596,
+                "type": "Utility",
+                "creationTime": 1791609670239.236,
+                "serviceName": "node.mojom.NodeService",
+                "name": "extensionHost-2",
+                "memory": {
+                  "workingSetSize": 133312,
+                  "peakWorkingSetSize": 165152
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 2.128675,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 34600,
+                "type": "Utility",
+                "creationTime": 1791609670773.941,
+                "serviceName": "node.mojom.NodeService",
+                "name": "shared-process-3",
+                "memory": {
+                  "workingSetSize": 99120,
+                  "peakWorkingSetSize": 221600
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.375378,
+                  "percentCPUUsage": 0,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 34601,
+                "type": "Utility",
+                "creationTime": 1791609670776.18,
+                "serviceName": "node.mojom.NodeService",
+                "name": "fileWatcher-4",
+                "memory": {
+                  "workingSetSize": 72320,
+                  "peakWorkingSetSize": 80400
+                },
+                "sandboxed": false
+              }
+            ],
+            "contents": [
+              {
+                "pid": 34306
+              }
+            ]
+          },
+          "rss": "34302 189296 <checkout>/.build/macos-app/Code - OSS.app/Contents/MacOS/Code - OSS\n34303 149904 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34304  33648 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34306 1075392 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Renderer).app/Contents/MacOS/Code - OSS Helper (Renderer)\n34593 136848 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34596 133312 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Plugin).app/Contents/MacOS/Code - OSS Helper (Plugin)\n34600  99120 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34601  72320 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n",
+          "heap": {
+            "usedSize": 83940000,
+            "totalSize": 87588864,
+            "embedderHeapUsedSize": 11284768,
+            "backingStorageSize": 75960069
+          },
+          "metrics": [
+            {
+              "name": "Documents",
+              "value": 4
+            },
+            {
+              "name": "Frames",
+              "value": 3
+            },
+            {
+              "name": "Nodes",
+              "value": 1497
+            },
+            {
+              "name": "JSHeapUsedSize",
+              "value": 83940000
+            },
+            {
+              "name": "JSHeapTotalSize",
+              "value": 87588864
+            }
+          ],
+          "surface": {
+            "dpr": 2,
+            "canvases": [
+              [
+                1400,
+                1128
+              ]
+            ],
+            "domChars": 0
+          }
+        },
+        {
+          "name": "after5Scrolls",
+          "native": {
+            "metrics": [
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 4.134002,
+                  "percentCPUUsage": 1.2467981925488583,
+                  "idleWakeupsPerSecond": 3
+                },
+                "pid": 34302,
+                "type": "Browser",
+                "creationTime": 1791609664883.32,
+                "memory": {
+                  "workingSetSize": 185312,
+                  "peakWorkingSetSize": 252992
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 3.58249,
+                  "percentCPUUsage": 6.169744395697397,
+                  "idleWakeupsPerSecond": 118
+                },
+                "pid": 34303,
+                "type": "GPU",
+                "creationTime": 1791609665312.776,
+                "serviceName": "GPU",
+                "memory": {
+                  "workingSetSize": 183968,
+                  "peakWorkingSetSize": 212432
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.146607,
+                  "percentCPUUsage": 0.012877490536939868,
+                  "idleWakeupsPerSecond": 1
+                },
+                "pid": 34304,
+                "type": "Utility",
+                "creationTime": 1791609665333.983,
+                "serviceName": "network.mojom.NetworkService",
+                "name": "Network Service",
+                "memory": {
+                  "workingSetSize": 33648,
+                  "peakWorkingSetSize": 36016
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 15.165417,
+                  "percentCPUUsage": 6.38411766140345,
+                  "idleWakeupsPerSecond": 13
+                },
+                "pid": 34306,
+                "type": "Tab",
+                "creationTime": 1791609665869.006,
+                "memory": {
+                  "workingSetSize": 1033920,
+                  "peakWorkingSetSize": 1146080
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.335119,
+                  "percentCPUUsage": 0.0785664980593181,
+                  "idleWakeupsPerSecond": 1
+                },
+                "pid": 34593,
+                "type": "Utility",
+                "creationTime": 1791609669385.304,
+                "serviceName": "node.mojom.NodeService",
+                "name": "agentHost-1",
+                "memory": {
+                  "workingSetSize": 136624,
+                  "peakWorkingSetSize": 167408
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.96631,
+                  "percentCPUUsage": 0.19291222951847928,
+                  "idleWakeupsPerSecond": 3
+                },
+                "pid": 34596,
+                "type": "Utility",
+                "creationTime": 1791609670239.236,
+                "serviceName": "node.mojom.NodeService",
+                "name": "extensionHost-2",
+                "memory": {
+                  "workingSetSize": 131968,
+                  "peakWorkingSetSize": 165152
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 2.13007,
+                  "percentCPUUsage": 0.007892922407989743,
+                  "idleWakeupsPerSecond": 1
+                },
+                "pid": 34600,
+                "type": "Utility",
+                "creationTime": 1791609670773.941,
+                "serviceName": "node.mojom.NodeService",
+                "name": "shared-process-3",
+                "memory": {
+                  "workingSetSize": 84608,
+                  "peakWorkingSetSize": 221600
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.381491,
+                  "percentCPUUsage": 0.034587578629029406,
+                  "idleWakeupsPerSecond": 4
+                },
+                "pid": 34601,
+                "type": "Utility",
+                "creationTime": 1791609670776.18,
+                "serviceName": "node.mojom.NodeService",
+                "name": "fileWatcher-4",
+                "memory": {
+                  "workingSetSize": 69072,
+                  "peakWorkingSetSize": 80400
+                },
+                "sandboxed": false
+              }
+            ],
+            "contents": [
+              {
+                "pid": 34306
+              }
+            ]
+          },
+          "rss": "34302 185328 <checkout>/.build/macos-app/Code - OSS.app/Contents/MacOS/Code - OSS\n34303 183968 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34304  33648 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34306 1033920 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Renderer).app/Contents/MacOS/Code - OSS Helper (Renderer)\n34593 136624 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34596 131968 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Plugin).app/Contents/MacOS/Code - OSS Helper (Plugin)\n34600  84608 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34601  69072 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n",
+          "heap": {
+            "usedSize": 87722324,
+            "totalSize": 93356032,
+            "embedderHeapUsedSize": 18957992,
+            "backingStorageSize": 77149327
+          },
+          "metrics": [
+            {
+              "name": "Documents",
+              "value": 4
+            },
+            {
+              "name": "Frames",
+              "value": 3
+            },
+            {
+              "name": "Nodes",
+              "value": 2635
+            },
+            {
+              "name": "JSHeapUsedSize",
+              "value": 87722072
+            },
+            {
+              "name": "JSHeapTotalSize",
+              "value": 93356032
+            }
+          ],
+          "surface": {
+            "dpr": 2,
+            "canvases": [
+              [
+                1400,
+                1128
+              ]
+            ],
+            "domChars": 0
+          }
+        },
+        {
+          "name": "afterExplicitGC",
+          "native": {
+            "metrics": [
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 4.150814,
+                  "percentCPUUsage": 0.1066492089803049,
+                  "idleWakeupsPerSecond": 2
+                },
+                "pid": 34302,
+                "type": "Browser",
+                "creationTime": 1791609664883.32,
+                "memory": {
+                  "workingSetSize": 185360,
+                  "peakWorkingSetSize": 252992
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 3.693524,
+                  "percentCPUUsage": 0.7043969521766401,
+                  "idleWakeupsPerSecond": 70
+                },
+                "pid": 34303,
+                "type": "GPU",
+                "creationTime": 1791609665312.776,
+                "serviceName": "GPU",
+                "memory": {
+                  "workingSetSize": 179920,
+                  "peakWorkingSetSize": 212432
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.147186,
+                  "percentCPUUsage": 0.0036731742753712145,
+                  "idleWakeupsPerSecond": 1
+                },
+                "pid": 34304,
+                "type": "Utility",
+                "creationTime": 1791609665333.983,
+                "serviceName": "network.mojom.NetworkService",
+                "name": "Network Service",
+                "memory": {
+                  "workingSetSize": 33648,
+                  "peakWorkingSetSize": 36016
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 15.629069,
+                  "percentCPUUsage": 2.9414057873344555,
+                  "idleWakeupsPerSecond": 9
+                },
+                "pid": 34306,
+                "type": "Tab",
+                "creationTime": 1791609665869.006,
+                "memory": {
+                  "workingSetSize": 1026912,
+                  "peakWorkingSetSize": 1146080
+                },
+                "sandboxed": true
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.338838,
+                  "percentCPUUsage": 0.0235934686122809,
+                  "idleWakeupsPerSecond": 1
+                },
+                "pid": 34593,
+                "type": "Utility",
+                "creationTime": 1791609669385.304,
+                "serviceName": "node.mojom.NodeService",
+                "name": "agentHost-1",
+                "memory": {
+                  "workingSetSize": 136640,
+                  "peakWorkingSetSize": 167408
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 1.969712,
+                  "percentCPUUsage": 0.021582643443691568,
+                  "idleWakeupsPerSecond": 1
+                },
+                "pid": 34596,
+                "type": "Utility",
+                "creationTime": 1791609670239.236,
+                "serviceName": "node.mojom.NodeService",
+                "name": "extensionHost-2",
+                "memory": {
+                  "workingSetSize": 131968,
+                  "peakWorkingSetSize": 165152
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 2.131373,
+                  "percentCPUUsage": 0.008266358698810431,
+                  "idleWakeupsPerSecond": 0
+                },
+                "pid": 34600,
+                "type": "Utility",
+                "creationTime": 1791609670773.941,
+                "serviceName": "node.mojom.NodeService",
+                "name": "shared-process-3",
+                "memory": {
+                  "workingSetSize": 84608,
+                  "peakWorkingSetSize": 221600
+                },
+                "sandboxed": false
+              },
+              {
+                "cpu": {
+                  "cumulativeCPUUsage": 0.384155,
+                  "percentCPUUsage": 0.016900617138976743,
+                  "idleWakeupsPerSecond": 3
+                },
+                "pid": 34601,
+                "type": "Utility",
+                "creationTime": 1791609670776.18,
+                "serviceName": "node.mojom.NodeService",
+                "name": "fileWatcher-4",
+                "memory": {
+                  "workingSetSize": 69072,
+                  "peakWorkingSetSize": 80400
+                },
+                "sandboxed": false
+              }
+            ],
+            "contents": [
+              {
+                "pid": 34306
+              }
+            ]
+          },
+          "rss": "34302 185360 <checkout>/.build/macos-app/Code - OSS.app/Contents/MacOS/Code - OSS\n34303 179920 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34304  33648 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34306 1026912 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Renderer).app/Contents/MacOS/Code - OSS Helper (Renderer)\n34593 136640 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34596 131968 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper (Plugin).app/Contents/MacOS/Code - OSS Helper (Plugin)\n34600  84608 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n34601  69072 <checkout>/.build/macos-app/Code - OSS.app/Contents/Frameworks/Code - OSS Helper.app/Contents/MacOS/Code - OSS Helper\n",
+          "heap": {
+            "usedSize": 84900944,
+            "totalSize": 87851008,
+            "embedderHeapUsedSize": 11614528,
+            "backingStorageSize": 72075897
+          },
+          "metrics": [
+            {
+              "name": "Documents",
+              "value": 4
+            },
+            {
+              "name": "Frames",
+              "value": 3
+            },
+            {
+              "name": "Nodes",
+              "value": 1626
+            },
+            {
+              "name": "JSHeapUsedSize",
+              "value": 84900944
+            },
+            {
+              "name": "JSHeapTotalSize",
+              "value": 87851008
+            }
+          ],
+          "surface": {
+            "dpr": 2,
+            "canvases": [
+              [
+                1400,
+                1128
+              ]
+            ],
+            "domChars": 0
+          }
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

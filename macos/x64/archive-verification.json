@@ -1,0 +1,9 @@
+{
+  "file": "Code-OSS-editor-gpu-macos-x64.zip",
+  "bytes": 405877096,
+  "sha256": "fa009dbf0fc95e1cf17e118f8f9f3a39c82d37636741a49c215f7b467afa163a",
+  "sourceCommit": "bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7",
+  "architecture": "x64",
+  "machOCpuType": "0x1000007",
+  "verification": "Checksum, source provenance and Mach-O executable architecture checked locally"
+}

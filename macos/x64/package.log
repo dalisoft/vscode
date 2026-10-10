@@ -1,0 +1,169 @@
+npm warn Unknown env config "arch". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> code-oss-dev@1.142.0 gulp
+> node --experimental-strip-types --max-old-space-size=8192 ./node_modules/gulp/bin/gulp.js vscode-darwin-x64
+
+[04:55:44] Using gulpfile ~/work/vscode/vscode/gulpfile.mjs
+[04:55:44] Starting 'vscode-darwin-x64'...
+[04:55:44] Starting [36mcopy-codicons[39m ...
+[04:55:44] Finished [36mcopy-codicons[39m after [35m2 ms[39m
+[04:55:44] Starting [36mclean-extensions-build[39m ...
+[04:55:44] Finished [36mclean-extensions-build[39m after [35m2 ms[39m
+[04:55:44] Starting [36mbundle-marketplace-extensions-build[39m ...
+[04:55:44] Downloading extension from GH: [33mms-vscode.js-debug-companion@1.1.3[39m  ...
+[04:55:44] Downloading extension from GH: [33mms-vscode.js-debug@1.140.0[39m  ...
+[04:55:44] Downloading extension from GH: [33mms-vscode.vscode-js-profile-table@1.0.11[39m  ...
+[04:55:44] Start fetching [35mhttps://api.github.com/repos/microsoft/vscode-js-debug-companion/releases/tags/v1.1.3[39m
+[04:55:44] Start fetching [35mhttps://api.github.com/repos/microsoft/vscode-js-debug/releases/tags/v1.140.0[39m
+[04:55:44] Start fetching [35mhttps://api.github.com/repos/microsoft/vscode-js-profile-visualizer/releases/tags/v1.0.11[39m
+[04:55:44] Fetch completed: Status 200. Took [35m198 ms[39m
+[04:55:44] Fetch completed: Status 200. Took [35m199 ms[39m
+[04:55:44] Skipping checksum verification for [36mhttps://api.github.com/repos/microsoft/vscode-js-profile-visualizer/releases/tags/v1.0.11[39m because no expected checksum was provided
+[04:55:44] Fetched response body buffer: [35m4302 bytes[39m
+[04:55:44] Start fetching [35mhttps://api.github.com/repos/microsoft/vscode-js-profile-visualizer/releases/assets/497034221[39m
+[04:55:44] Skipping checksum verification for [36mhttps://api.github.com/repos/microsoft/vscode-js-debug/releases/tags/v1.140.0[39m because no expected checksum was provided
+[04:55:44] Fetched response body buffer: [35m7340 bytes[39m
+[04:55:44] Start fetching [35mhttps://api.github.com/repos/microsoft/vscode-js-debug/releases/assets/584220989[39m
+[04:55:44] Fetch completed: Status 200. Took [35m290 ms[39m
+[04:55:44] Skipping checksum verification for [36mhttps://api.github.com/repos/microsoft/vscode-js-debug-companion/releases/tags/v1.1.3[39m because no expected checksum was provided
+[04:55:44] Fetched response body buffer: [35m6792 bytes[39m
+[04:55:44] Start fetching [35mhttps://api.github.com/repos/microsoft/vscode-js-debug-companion/releases/assets/181600923[39m
+[04:55:44] Fetch completed: Status 200. Took [35m169 ms[39m
+[04:55:44] Verified SHA256 checksums match for [36mhttps://api.github.com/repos/microsoft/vscode-js-profile-visualizer/releases/assets/497034221[39m
+[04:55:44] Fetched response body buffer: [35m329373 bytes[39m
+(node:46065) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[04:55:44] Fetch completed: Status 200. Took [35m172 ms[39m
+[04:55:44] Verified SHA256 checksums match for [36mhttps://api.github.com/repos/microsoft/vscode-js-debug-companion/releases/assets/181600923[39m
+[04:55:44] Fetched response body buffer: [35m52784 bytes[39m
+[04:55:44] Fetch completed: Status 200. Took [35m256 ms[39m
+[04:55:44] Verified SHA256 checksums match for [36mhttps://api.github.com/repos/microsoft/vscode-js-debug/releases/assets/584220989[39m
+[04:55:44] Fetched response body buffer: [35m1350618 bytes[39m
+[04:55:45] Finished [36mbundle-marketplace-extensions-build[39m after [35m1346 ms[39m
+[04:55:45] Starting [36mbundle-non-native-extensions-build[39m ...
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/configuration-editing/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/css-language-features/client/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/css-language-features/server/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/debug-auto-launch/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/debug-server-ready/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/emmet/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/extension-editing/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/git-base/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/github-authentication/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/github/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/grunt/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/gulp/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/html-language-features/client/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/html-language-features/server/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/ipynb/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/jake/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/json-language-features/client/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/json-language-features/server/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/markdown-language-features/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/markdown-math/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/media-preview/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/merge-conflict/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/mermaid-markdown-features/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/npm/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/php-language-features/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/references-view/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/search-result/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/simple-browser/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/tunnel-forwarding/tsconfig.json with 0 errors.
+[04:56:03] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/typescript-language-features/tsconfig.json with 0 errors.
+[04:56:03] Bundled extension: [33mtypescript-language-features/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mtunnel-forwarding/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mterminal-suggest/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33msimple-browser/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33msearch-result/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mreferences-view/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mphp-language-features/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mnpm/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mmermaid-markdown-features/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mmerge-conflict/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mmedia-preview/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mmarkdown-math/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mmarkdown-language-features/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mjson-language-features/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mjake/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mipynb/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mhtml-language-features/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mgulp/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mgrunt/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mgithub/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mgithub-authentication/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mgit-base/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mextension-editing/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33memmet/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mdebug-server-ready/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mdebug-auto-launch/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mcss-language-features/esbuild.mts[39m with 0 errors.
+[04:56:03] Bundled extension: [33mconfiguration-editing/esbuild.mts[39m with 0 errors.
+[04:56:06] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/terminal-suggest/tsconfig.json with 0 errors.
+[04:56:20] Finished [36mbundle-non-native-extensions-build[39m after [35m35122 ms[39m
+[04:56:20] Starting [36mcompile-non-native-extensions-build[39m ...
+[04:56:20] Finished [36mcompile-non-native-extensions-build[39m after [35m0 ms[39m
+[04:56:20] Starting [36mcompile-copilot-extension-build[39m ...
+[04:56:33] [32mesbuilding[39m: Creating symlinks for Claude session storage and instructions...
+
+[04:56:33] Bundled extension: [33mcopilot/.esbuild.mts[39m with 0 errors.
+[04:59:32] Finished [36mcompile-copilot-extension-build[39m after [35m191664 ms[39m
+[04:59:32] Starting [36mcompile-extension-media-build[39m ...
+[04:59:33] Finished [32mtypechecking extension media (tsgo)[39m <checkout>/extensions/markdown-math/notebook/tsconfig.json with 0 errors.
+[04:59:33] Finished [32mtypechecking extension media (tsgo)[39m <checkout>/extensions/markdown-language-features/notebook/tsconfig.json with 0 errors.
+[04:59:33] Finished [32mesbuilding extension media[39m <checkout>/extensions/markdown-language-features/esbuild.webview.mts with 0 errors.
+[04:59:33] Finished [32mesbuilding extension media[39m <checkout>/extensions/markdown-language-features/esbuild.notebook.mts with 0 errors.
+[04:59:33] Finished [32mesbuilding extension media[39m <checkout>/extensions/simple-browser/esbuild.webview.mts with 0 errors.
+[04:59:33] Finished [32mesbuilding extension media[39m <checkout>/extensions/ipynb/esbuild.notebook.mts with 0 errors.
+[04:59:34] Finished [32mtypechecking extension media (tsgo)[39m <checkout>/extensions/markdown-language-features/preview-src/tsconfig.json with 0 errors.
+[04:59:34] Finished [32mtypechecking extension media (tsgo)[39m <checkout>/extensions/ipynb/notebook-src/tsconfig.json with 0 errors.
+[04:59:34] Finished [32mesbuilding extension media[39m <checkout>/extensions/markdown-math/esbuild.notebook.mts with 0 errors.
+[04:59:34] Finished [32mesbuilding extension media[39m <checkout>/extensions/notebook-renderers/esbuild.notebook.mts with 0 errors.
+[04:59:34] Finished [32mtypechecking extension media (tsgo)[39m <checkout>/extensions/markdown-language-features/markdown-editor-src/tsconfig.json with 0 errors.
+[04:59:34] Finished [32mtypechecking extension media (tsgo)[39m <checkout>/extensions/notebook-renderers/tsconfig.json with 0 errors.
+[04:59:35] Finished [32mtypechecking extension media (tsgo)[39m <checkout>/extensions/simple-browser/preview-src/tsconfig.json with 0 errors.
+[04:59:37] Finished [32mesbuilding extension media[39m <checkout>/extensions/markdown-language-features/esbuild.markdownEditor.mts with 0 errors.
+[04:59:38] Finished [32mtypechecking extension media (tsgo)[39m <checkout>/extensions/mermaid-markdown-features/preview-src/tsconfig.json with 0 errors.
+[04:59:39] Finished [32mesbuilding extension media[39m <checkout>/extensions/mermaid-markdown-features/esbuild.webview.mts with 0 errors.
+[04:59:39] Finished [36mcompile-extension-media-build[39m after [35m7029 ms[39m
+[04:59:39] Starting [36mbuild-date-file[39m ...
+[04:59:39] Finished [36mbuild-date-file[39m after [35m49 ms[39m
+[04:59:39] Starting [36mesbuild-bundle-darwin-x64[39m ...
+[clean] out-vscode
+[bundle] src → out-vscode (target: desktop) (nls)
+[nls] Extracted 27673 messages from 2170 modules
+[bundle] Syntax check passed for 17 post-processed JS files
+[resources] Copying to <checkout>/out-vscode for target 'desktop'...
+[resources] Copied 246 files
+[standalone] Compiling 3 standalone files...
+[standalone] Done
+[bundle] Done in 173499ms (25 bundles)
+
+✓ Total: 173504ms
+[05:02:34] Finished [36mesbuild-bundle-darwin-x64[39m after [35m175321 ms[39m
+[05:02:34] Starting [36mcompile-native-extensions-build[39m ...
+[05:02:36] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/git/tsconfig.json with 0 errors.
+[05:02:36] Finished [32mtypechecking extension (tsgo)[39m <checkout>/extensions/microsoft-authentication/tsconfig.json with 0 errors.
+[05:02:36] Bundled extension: [33mmicrosoft-authentication/esbuild.mts[39m with 0 errors.
+[05:02:36] Bundled extension: [33mgit/esbuild.mts[39m with 0 errors.
+[05:02:37] Finished [36mcompile-native-extensions-build[39m after [35m2917 ms[39m
+[05:02:37] Starting [36mclean-vscode-darwin-x64[39m ...
+[05:02:37] Finished [36mclean-vscode-darwin-x64[39m after [35m2 ms[39m
+[05:02:37] Starting [36mpackage-darwin-x64[39m ...
+
+
+[05:03:49] Finished [36mpackage-darwin-x64[39m after [35m71696 ms[39m
+[05:03:49] Starting [36mvscode-darwin-x64-ci[39m ...
+[materializeNpmPackageVersion] Materialized @github/copilot-darwin-x64@1.0.73 in /var/folders/20/jp1_0n3n7kndh6rnbqb5344m0000gn/T/vscode-copilot-native-u34RT5/copilot-darwin-x64
+[prepareBuiltInCopilotRipgrepShim] @github/copilot-darwin-x64 in app-root does not match the built-in extension's @github/copilot@1.0.73; using the version-matched package instead.
+[prepareBuiltInCopilotRipgrepShim] Materialized ripgrep shim for darwin-x64 in <runner-home>/work/vscode/VSCode-darwin-x64/Code - OSS.app/Contents/Resources/app/extensions/copilot
+[05:03:54] Finished [36mvscode-darwin-x64-ci[39m after [35m5155 ms[39m
+[05:03:54] Starting [36mvscode-darwin-x64[39m ...
+[05:03:54] Finished [36mvscode-darwin-x64[39m after [35m0 ms[39m
+[05:03:54] Finished 'vscode-darwin-x64' after 8.17 min

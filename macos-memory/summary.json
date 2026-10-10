@@ -1,0 +1,60 @@
+{
+  "run": "https://github.com/dalisoft/vscode/actions/runs/38027061717",
+  "rows": [
+    {
+      "mode": "off",
+      "phase": "idle60s",
+      "rendererRSSMiB": 631.015625,
+      "gpuRSSMiB": 82.578125,
+      "jsUsedMiB": 70.17354583740234,
+      "backingStorageMiB": 43.584869384765625,
+      "displayedProcessWorkingSetSumMiB": 1389.5
+    },
+    {
+      "mode": "off",
+      "phase": "after5Scrolls",
+      "rendererRSSMiB": 631.984375,
+      "gpuRSSMiB": 87.125,
+      "jsUsedMiB": 72.81220626831055,
+      "backingStorageMiB": 41.28637218475342,
+      "displayedProcessWorkingSetSumMiB": 1385.015625
+    },
+    {
+      "mode": "off",
+      "phase": "afterExplicitGC",
+      "rendererRSSMiB": 624.8125,
+      "gpuRSSMiB": 86.46875,
+      "jsUsedMiB": 71.30617904663086,
+      "backingStorageMiB": 41.273179054260254,
+      "displayedProcessWorkingSetSumMiB": 1377.21875
+    },
+    {
+      "mode": "on",
+      "phase": "idle60s",
+      "rendererRSSMiB": 1050.1875,
+      "gpuRSSMiB": 146.390625,
+      "jsUsedMiB": 80.05142211914062,
+      "backingStorageMiB": 72.44116687774658,
+      "displayedProcessWorkingSetSumMiB": 1845.390625
+    },
+    {
+      "mode": "on",
+      "phase": "after5Scrolls",
+      "rendererRSSMiB": 1009.6875,
+      "gpuRSSMiB": 179.65625,
+      "jsUsedMiB": 83.65852737426758,
+      "backingStorageMiB": 73.57533168792725,
+      "displayedProcessWorkingSetSumMiB": 1815.546875
+    },
+    {
+      "mode": "on",
+      "phase": "afterExplicitGC",
+      "rendererRSSMiB": 1002.84375,
+      "gpuRSSMiB": 175.703125,
+      "jsUsedMiB": 80.96784973144531,
+      "backingStorageMiB": 68.73693180084229,
+      "displayedProcessWorkingSetSumMiB": 1804.8125
+    }
+  ],
+  "limitations": "One sequential off/on run in fresh profiles, generated JSON, Menlo14, 2x scale, Apple hosted runner; not repeated statistics, original Mac workspace or unique physical/unified-memory accounting. JS heap/backing and native working sets are distinct accounting scopes; do not sum them. Does not prove no leak or a performance benefit."
+}

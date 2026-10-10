@@ -1,0 +1,54 @@
+Diagnosing editor GPU memory on macOS
+
+Observed on contributor M1 Max, 64GB RAM, 32-core GPU:
+Process Explorer window: GPU off 655 MB, GPU on 1180 MB (~80% higher).
+GPU process: 131 MB in both captures. Glyphs and scrolling reported working.
+The window-only increase exceeds 50%. Displayed app rows sum to 1705 MB off
+and 2164 MB on (~27% higher), but this is not unique physical memory. Total
+acceptance remains open. Raw contributor screenshots are not published.
+
+Process Explorer derives memory from rounded ps %MEM on macOS. With 64GB RAM,
+0.1 percentage point corresponds to about 65.5 MiB. Use precise RSS or Activity
+Monitor, and compare like-for-like; macOS memory compression and shared GPU
+allocations mean RSS is not a complete unified-memory accounting metric.
+
+1. Fully quit all Code OSS processes. Use the same build/profile/files/panes,
+   font, theme and zoom for GPU off and on. Wait 60 seconds after opening files.
+   First record memory with Developer Tools closed.
+2. In Activity Monitor, record the Code OSS window renderer and GPU helper.
+   Or use the current PIDs from Process Explorer with:
+
+     ps -p WINDOW_PID,GPU_PID -o pid=,rss=,comm=
+
+   RSS is in KiB; divide by 1024 for MiB. PIDs change after restarting.
+3. Repeat the same scrolling five times. Record idle and post-scroll memory.
+   Separately test five split/close-editor cycles and five zoom cycles, then
+   return to the original layout/zoom. Continuing growth is more suspicious
+   than a one-time increase that reaches a stable plateau.
+4. Open Developer: Toggle Developer Tools > Memory. Collect garbage and take
+   a heap snapshot. Repeat the failing sequence, collect garbage again, take
+   another snapshot and choose Comparison. Look at positive retained size
+   and object-count deltas for ArrayBuffer, Float32Array, Map, OffscreenCanvas,
+   TextureAtlasPage, GlyphRasterizer and render strategies. Constructor names
+   can vary in bundled code. Inspect retainers of surviving disposed objects.
+   Clear console history before capturing to avoid retaining inspected objects.
+5. Compare JS heap growth with renderer/GPU process growth. A small JS heap
+   with large RSS growth points toward canvas backing stores, native/driver
+   buffers, allocator retention or other non-JS resources. A heap snapshot
+   alone cannot certify total GPU/unified memory. Test on the generated fixture
+   when exporting snapshots, since snapshots can contain open-file text.
+
+Source allocation facts:
+- Full-file cell capacity is 3000 lines x 200 columns x 6 floats x 4 bytes:
+  14,400,000 bytes per buffer. Two CPU buffers plus one GPU buffer total
+  43,200,000 bytes (~41.2 MiB) per active full-file renderer, before overhead.
+- Each 2048x2048 RGBA8 atlas page has 16 MiB raw pixel capacity. CPU atlas
+  canvases are shared within the renderer; GPU atlas textures are per editor.
+- This patch starts each GPU atlas at one layer, but it grows with page usage.
+  CPU glyph warmup still populates printable characters across token colors
+  and subpixel variants. Its cost is a profiling candidate, not a proven cause
+  of the contributor's 525 MB difference.
+
+Reference documentation:
+https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots/
+https://www.electronjs.org/docs/latest/api/process

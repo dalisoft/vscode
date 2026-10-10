@@ -1,0 +1,11 @@
+{
+  "sourceCommit": "bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7",
+  "workload": "1800 generated JSON settings, Menlo 14, Quiet Light, forced native scale 2; isolated fresh processes for each mode",
+  "runs": [
+    {
+      "mode": "off",
+      "samples": [],
+      "errors": []
+    }
+  ]
+}

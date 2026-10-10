@@ -1,0 +1,2 @@
+$ node_modules/.bin/tsc -p .agent-validation/publish/typecheck-config.json --pretty false
+Exit status: 0 (no diagnostics)

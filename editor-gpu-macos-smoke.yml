@@ -1,0 +1,98 @@
+name: Editor GPU packaged macOS smoke test
+
+on:
+  push:
+    branches: [build/editor-gpu-macos]
+    paths:
+      - .github/workflows/editor-gpu-macos-smoke.yml
+      - .github/scripts/editor-gpu-macos-smoke.cjs
+      - .github/scripts/editor-gpu-macos-memory.cjs
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  smoke:
+    name: Packaged workbench macOS ${{ matrix.arch }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: arm64
+            runner: macos-15
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 50
+    env:
+      BUILD_RUN: '38025104064'
+      SOURCE_COMMIT: bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7
+      VSCODE_ARCH: ${{ matrix.arch }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Check out smoke test tooling
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version-file: .nvmrc
+
+      - name: Wait for the matching application artifact
+        timeout-minutes: 35
+        run: |
+          for attempt in {1..140}; do
+            name="Code-OSS-editor-gpu-macos-$VSCODE_ARCH"
+            if gh api "repos/$GITHUB_REPOSITORY/actions/runs/$BUILD_RUN/artifacts" --jq '.artifacts[].name' | grep -Fx "$name"; then
+              gh run download "$BUILD_RUN" --repo "$GITHUB_REPOSITORY" --name "$name" --dir .build/downloads
+              exit 0
+            fi
+            status=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$BUILD_RUN" --jq '.status')
+            if [ "$status" = completed ]; then
+              echo "Build completed without the required $VSCODE_ARCH artifact" >&2
+              exit 1
+            fi
+            sleep 15
+          done
+          exit 1
+
+      - name: Verify provenance and extract application
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import crypto from 'node:crypto';
+          const provenance = JSON.parse(fs.readFileSync('.build/downloads/provenance.json', 'utf8'));
+          if (provenance.checkedOutCommit !== process.env.SOURCE_COMMIT || provenance.architecture !== process.env.VSCODE_ARCH) throw Error('Unexpected artifact provenance');
+          const archive = `.build/downloads/Code-OSS-editor-gpu-macos-${process.env.VSCODE_ARCH}.zip`;
+          const checksum = crypto.createHash('sha256').update(fs.readFileSync(archive)).digest('hex');
+          if (!fs.readFileSync('.build/downloads/SHA256SUMS.txt', 'utf8').startsWith(checksum)) throw Error('Archive checksum mismatch');
+          NODE
+          ditto -x -k ".build/downloads/Code-OSS-editor-gpu-macos-$VSCODE_ARCH.zip" .build/macos-app
+          codesign --verify --deep --strict --verbose=2 '.build/macos-app/Code - OSS.app'
+
+      - name: Install pinned UI automation tooling
+        run: npm install --prefix .build/smoke-tools --ignore-scripts --package-lock=false playwright@1.61.1
+
+      - name: Launch packaged app and capture GPU text at line 50000
+        timeout-minutes: 10
+        run: |
+          mkdir -p .build/editor-gpu-smoke-evidence
+          set -o pipefail
+          node .github/scripts/editor-gpu-macos-smoke.cjs 2>&1 | tee .build/editor-gpu-smoke-evidence/smoke.log
+
+      - name: Compare native renderer memory with GPU off and on
+        timeout-minutes: 10
+        run: |
+          set -o pipefail
+          node .github/scripts/editor-gpu-macos-memory.cjs 2>&1 | tee .build/editor-gpu-smoke-evidence/memory.log
+
+      - name: Upload packaged workbench evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: editor-gpu-packaged-macos-${{ matrix.arch }}-evidence
+          path: .build/editor-gpu-smoke-evidence/
+          retention-days: 30
+          if-no-files-found: warn

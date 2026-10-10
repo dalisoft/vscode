@@ -1,0 +1,76 @@
+{
+  "sourceCommit": "bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7",
+  "baseCommit": "04861ffbe8db495a8f1257bd34d2d82766dc5de3",
+  "branch": "fix/editor-gpu-rendering",
+  "node": "24.18.0",
+  "playwright": "1.61.1",
+  "chromium": "149.0.7827.55 (Playwright revision 1228)",
+  "platform": "Linux x86_64",
+  "gpu": "SwiftShader software Vulkan/WebGPU",
+  "screenshots": "Actual integrated editor view and GPU rendering; not a full Electron workbench",
+  "nativeDisplayScaleFactors": [
+    1,
+    1.25,
+    2
+  ],
+  "sourceModificationsDuringControls": "Compiled out/ files only, restored in finally; production source unchanged",
+  "aiAssisted": "Implementation, investigation and automated validation generated with OpenAI Codex under @dalisoft direction",
+  "macOSBuildRun": "https://github.com/dalisoft/vscode/actions/runs/38025104064",
+  "fontSource": "https://github.com/JetBrains/JetBrainsMono",
+  "sanitization": "Local checkout/runner paths and a public dependency warning email replaced; long browser debug URLs removed; assertions and results preserved",
+  "sourceFileSha256": {
+    "src/vs/editor/browser/gpu/atlas/gpuAtlasStorage.ts": "f30f3a4c486022b156670cd9ef8700cc8fa628ef0d30cb16643d9d10ee6c72ed",
+    "src/vs/editor/browser/gpu/gpuUtils.ts": "fe368fbdadcbc46dd04abf132b06aaa875e59e732ed2854117a35cc2aec2bf03",
+    "src/vs/editor/browser/gpu/raster/glyphRasterizer.ts": "8030584a76949dac38fd229091ff08feb4782cef7afcf324712992d4168502db",
+    "src/vs/editor/browser/gpu/rectangleRenderer.ts": "f55aa68a4de20b7f88a1a671719a9c5984f00cec201626c430261a71ccbd130f",
+    "src/vs/editor/browser/gpu/renderStrategy/baseRenderStrategy.ts": "e28a93a01ca02854007eb2c842a86c219125b29dd57b8db59e8309db7181b605",
+    "src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.ts": "87f498f3d11eaf6fbf24ad1ba36e9b2b4bdb3993d57e4c42c7d7b85889816701",
+    "src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.wgsl.ts": "0416548e2adc87a0c13aaa8b1aa066e880b5131dcfc0a988b8bb7eaf45cf4de7",
+    "src/vs/editor/browser/gpu/renderStrategy/viewportRenderStrategy.ts": "dd63dc3b4193901b452870c9bff96f038830b3ff84510f4cae4ab1442a8df548",
+    "src/vs/editor/browser/viewParts/viewLinesGpu/viewLinesGpu.ts": "5ffc3eddaec5bb72a402258d7a0be9c433e6441a4e72ec0c466c7e70d73fe7a8",
+    "src/vs/editor/test/browser/gpu/atlas/gpuAtlasStorage.test.ts": "64b130e09be4aac407823f49ea30d4d23b5348c0ec81db48e39e10d6fdf8ddc0",
+    "src/vs/editor/test/browser/gpu/glyphRasterizer.test.ts": "72f994634ac72a89e3d204e3f93156f8cb8cc91c4871a14d4f524cad0f303333",
+    "src/vs/editor/test/browser/gpu/gpuRendering.test.ts": "3680a9fdcaf2f84d818c756daa60e213165af4f51653839b524b914f529d4001",
+    "src/vs/editor/test/browser/gpu/renderStrategy.test.ts": "6731aca6737318e014dae53f8bcb79d40bf8888d72ef6242274019374a8580ec"
+  },
+  "workflowCommit": "1cabb6b4a2bfc8050ead0d6bea3255194eb0e25f",
+  "captureHarnessRetained": true,
+  "validationSourceCommit": "6b7eeb61a080fbb6812bcd95faac6aa9b73d2867",
+  "rebase": "Only agent-host restoration and workspace command-link trust changed upstream. Editor tree, base tree, theme tree, Node and lockfiles checked byte-identical; existing GPU validation reused.",
+  "macOSInitialRun": "https://github.com/dalisoft/vscode/actions/runs/38024148371",
+  "cancelledIntermediateRun": "https://github.com/dalisoft/vscode/actions/runs/38024969477",
+  "packagedSmokeRun": "https://github.com/dalisoft/vscode/actions/runs/38026650826",
+  "smokeWorkflowCommit": "5629ad3f1c0901de2aabc7822b2a60146e4f9bb7",
+  "macOSInitialValidation": {
+    "source": "6b7eeb61a080fbb6812bcd95faac6aa9b73d2867",
+    "arch": "arm64",
+    "electron": "43.7.7",
+    "passing": 53,
+    "pending": 2,
+    "pixelTest": "passed; did not skip",
+    "packaging": "failed at unrelated Copilot SDK filtering; retained in macos-initial-arm64"
+  },
+  "priorPackagedSmokeRun": "https://github.com/dalisoft/vscode/actions/runs/38026110428",
+  "macOSValidation": {
+    "arm64": {
+      "passing": 53,
+      "pending": 2,
+      "pixelTest": "passed; did not skip",
+      "packaging": "successful",
+      "nativeGPU": "Apple adapter; packaged workbench top and line50000 captured"
+    },
+    "x64": {
+      "passing": 52,
+      "pending": 3,
+      "pixelTest": "skipped; adapter unavailable",
+      "packaging": "successful",
+      "nativeGPU": "unavailable on Intel CI runner; packaged GPU smoke failed, not counted as pass"
+    }
+  },
+  "localTestTarget": "Apple Silicon, per contributor; physical Mac manual results pending",
+  "contributorReport": "Apple M1 Max 64GB / 32-core GPU; glyphs and scrolling working so far; window ~655 vs1180 MiB off/on; displayed row sums ~1705 vs2164; Process Explorer percent-memory estimates, total acceptance open",
+  "nativeMemoryRun": "https://github.com/dalisoft/vscode/actions/runs/38027061717",
+  "nativeMemoryWorkflowCommit": "620962cd1340035d52f3ba49ae71cf367ac02978",
+  "failedMemoryCollectorRun": "https://github.com/dalisoft/vscode/actions/runs/38026856948",
+  "nativeMemoryResult": "Substantial renderer RSS delta reproduced; single sequential off/on run at scale2. Idle 631.0 vs1050.2 MiB; post-GC 624.8 vs1002.8. Used JS heap delta ~10 MiB. See macos-memory/summary.json; total acceptance open."
+}

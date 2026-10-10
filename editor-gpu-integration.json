@@ -1,0 +1,416 @@
+[
+  {
+    "dpr": 1,
+    "snapshots": [
+      {
+        "name": "top",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 0,
+        "canvas": [
+          1086,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          1
+        ],
+        "strategy": "fullfile",
+        "visible": [
+          1,
+          30
+        ],
+        "delta": 0,
+        "ink": 26349
+      },
+      {
+        "name": "line50000",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          1086,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          4
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 29508
+      },
+      {
+        "name": "delete",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          1086,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          4
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 29490
+      },
+      {
+        "name": "undo",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          1086,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          4
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 29508
+      },
+      {
+        "name": "resize",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          786,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          8
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 29508
+      },
+      {
+        "name": "return",
+        "devicePixelRatio": 1,
+        "domText": "",
+        "scrollTop": 2019,
+        "canvas": [
+          786,
+          713
+        ],
+        "atlas": [
+          1024,
+          1024,
+          8
+        ],
+        "strategy": "viewport",
+        "visible": [
+          85,
+          114
+        ],
+        "delta": 0,
+        "ink": 27309
+      }
+    ],
+    "errors": []
+  },
+  {
+    "dpr": 1.25,
+    "snapshots": [
+      {
+        "name": "top",
+        "devicePixelRatio": 1.25,
+        "domText": "",
+        "scrollTop": 0,
+        "canvas": [
+          1360,
+          894
+        ],
+        "atlas": [
+          1024,
+          1024,
+          1
+        ],
+        "strategy": "fullfile",
+        "visible": [
+          1,
+          30
+        ],
+        "delta": 0,
+        "ink": 44081
+      },
+      {
+        "name": "line50000",
+        "devicePixelRatio": 1.25,
+        "domText": "",
+        "scrollTop": 1199618,
+        "canvas": [
+          1360,
+          894
+        ],
+        "atlas": [
+          1024,
+          1024,
+          2
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 49560
+      },
+      {
+        "name": "delete",
+        "devicePixelRatio": 1.25,
+        "domText": "",
+        "scrollTop": 1199618,
+        "canvas": [
+          1360,
+          894
+        ],
+        "atlas": [
+          1024,
+          1024,
+          4
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 49559
+      },
+      {
+        "name": "undo",
+        "devicePixelRatio": 1.25,
+        "domText": "",
+        "scrollTop": 1199618,
+        "canvas": [
+          1360,
+          894
+        ],
+        "atlas": [
+          1024,
+          1024,
+          4
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 49560
+      },
+      {
+        "name": "resize",
+        "devicePixelRatio": 1.25,
+        "domText": "",
+        "scrollTop": 1199618,
+        "canvas": [
+          983,
+          894
+        ],
+        "atlas": [
+          1024,
+          1024,
+          4
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 49560
+      },
+      {
+        "name": "return",
+        "devicePixelRatio": 1.25,
+        "domText": "",
+        "scrollTop": 2018,
+        "canvas": [
+          983,
+          894
+        ],
+        "atlas": [
+          1024,
+          1024,
+          8
+        ],
+        "strategy": "viewport",
+        "visible": [
+          85,
+          114
+        ],
+        "delta": 0,
+        "ink": 45695
+      }
+    ],
+    "errors": []
+  },
+  {
+    "dpr": 2,
+    "snapshots": [
+      {
+        "name": "top",
+        "devicePixelRatio": 2,
+        "domText": "",
+        "scrollTop": 0,
+        "canvas": [
+          2172,
+          1426
+        ],
+        "atlas": [
+          2048,
+          2048,
+          1
+        ],
+        "strategy": "fullfile",
+        "visible": [
+          1,
+          30
+        ],
+        "delta": 0,
+        "ink": 103669
+      },
+      {
+        "name": "line50000",
+        "devicePixelRatio": 2,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          2172,
+          1426
+        ],
+        "atlas": [
+          2048,
+          2048,
+          2
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 117201
+      },
+      {
+        "name": "delete",
+        "devicePixelRatio": 2,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          2172,
+          1426
+        ],
+        "atlas": [
+          2048,
+          2048,
+          2
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 117124
+      },
+      {
+        "name": "undo",
+        "devicePixelRatio": 2,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          2172,
+          1426
+        ],
+        "atlas": [
+          2048,
+          2048,
+          4
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 117201
+      },
+      {
+        "name": "resize",
+        "devicePixelRatio": 2,
+        "domText": "",
+        "scrollTop": 1199619,
+        "canvas": [
+          1572,
+          1426
+        ],
+        "atlas": [
+          2048,
+          2048,
+          4
+        ],
+        "strategy": "viewport",
+        "visible": [
+          49985,
+          50014
+        ],
+        "delta": 999984,
+        "ink": 117201
+      },
+      {
+        "name": "return",
+        "devicePixelRatio": 2,
+        "domText": "",
+        "scrollTop": 2019,
+        "canvas": [
+          1572,
+          1426
+        ],
+        "atlas": [
+          2048,
+          2048,
+          4
+        ],
+        "strategy": "viewport",
+        "visible": [
+          85,
+          114
+        ],
+        "delta": 0,
+        "ink": 106585
+      }
+    ],
+    "errors": []
+  }
+]

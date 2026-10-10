@@ -1,0 +1,133 @@
+Found --crash-reporter-directory argument. Setting crashDumps directory to be '<checkout>/.build/crashes'
+[45804:1010/045535.936745:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008051.
+[45804:1010/045535.937384:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008056.
+[45804:1010/045535.937404:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008057.
+[45804:1010/045535.937425:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008058.
+[45804:1010/045535.937437:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008059.
+[45804:1010/045535.937449:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x0000805B.
+[45804:1010/045535.937461:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008058.
+[45804:1010/045535.937471:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x000081A5.
+[45804:1010/045535.937481:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x000081A6.
+[45804:1010/045535.937493:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x000081A7.
+[45804:1010/045535.937519:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008229.
+[45804:1010/045535.937531:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x0000822A.
+[45804:1010/045535.937544:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x0000822B.
+[45804:1010/045535.937559:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x0000822C.
+[45804:1010/045535.937570:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x0000822D.
+[45804:1010/045535.937580:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x0000822E.
+[45804:1010/045535.937589:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x0000822F.
+[45804:1010/045535.937610:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008230.
+[45804:1010/045535.937637:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008814.
+[45804:1010/045535.937647:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008815.
+[45804:1010/045535.940114:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x0000881A.
+[45804:1010/045535.940156:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x0000881B.
+[45804:1010/045535.940171:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x000088F0.
+[45804:1010/045535.940187:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008C3A.
+[45804:1010/045535.940198:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008C41.
+[45804:1010/045535.940209:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008C43.
+[45804:1010/045535.940223:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008CAC.
+[45804:1010/045535.940246:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008CAD.
+[45804:1010/045535.940265:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008D48.
+[45804:1010/045535.940276:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008D62.
+[45804:1010/045535.940319:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008F94.
+[45804:1010/045535.940338:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008F95.
+[45804:1010/045535.940356:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008F97.
+[45804:1010/045535.940391:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008F98.
+[45804:1010/045535.940408:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008F99.
+[45804:1010/045535.940425:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008F9B.
+[45804:1010/045535.940442:WARNING:ui/gl/angle_platform_impl.cc:52] renderergl_utils.cpp:689 (GenerateTextureFormatCaps): Skipping unexpected sample count 9 for internal format 0x00008058.
+2026-10-10 04:55:36.393 Code - OSS Helper[45813:94260] XPC error for connection com.apple.backupd.sandbox.xpc: Connection invalid
+2026-10-10 04:55:36.394 Code - OSS Helper[45813:94261] XPC error for connection com.apple.backupd.sandbox.xpc: Connection invalid
+[45908:1010/045536.395796:ERROR:gpu/ipc/client/command_buffer_proxy_impl.cc:285] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+2026-10-10 04:55:36.480 Code - OSS Helper[45813:94260] XPC error for connection com.apple.backupd.sandbox.xpc: Connection invalid
+(node:45908) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `Code - OSS Helper (Renderer) --trace-deprecation ...` to show where the warning was created)
+(node:45908) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:45908) ExperimentalWarning: WASI is an experimental feature and might change at any time
+
+[0m[0m
+[0m  Tests are using suiteSetup and setup correctly[0m
+  [32m  ✔[0m[90m assertCleanState - check that registries are clean at the start of test running[0m
+
+[0m  GpuAtlasStorage[0m
+  [32m  ✔[0m[90m allocates only needed pages, reuses capacity and releases replaced storage[0m
+  [32m  ✔[0m[90m reallocates when page dimensions change and rejects invalid page counts[0m
+
+[0m  TextureAtlas[0m
+  [32m  ✔[0m[90m get single glyph[0m
+  [32m  ✔[0m[90m get multiple glyphs[0m
+  [32m  ✔[0m[90m adding glyph to full page creates new page[0m
+  [32m  ✔[0m[90m adding a glyph larger than the atlas[0m
+  [32m  ✔[0m[90m adding a glyph larger than the standard slab size[0m
+  [32m  ✔[0m[90m adding a non-first glyph larger than the standard slab size, causing an overflow to a new page[0m
+
+[0m  TextureAtlasAllocator[0m
+[0m    shared tests[0m
+    [32m  ✔[0m[90m (shelf) single allocation[0m
+    [36m  - (shelf) glyph too large for canvas[0m
+    [32m  ✔[0m[90m (slab) single allocation[0m
+    [36m  - (slab) glyph too large for canvas[0m
+[0m    TextureAtlasShelfAllocator[0m
+    [32m  ✔[0m[90m single allocation[0m
+    [32m  ✔[0m[90m wrapping[0m
+    [32m  ✔[0m[90m full[0m
+[0m    TextureAtlasSlabAllocator[0m
+    [32m  ✔[0m[90m single allocation[0m
+    [32m  ✔[0m[90m single slab single glyph full[0m
+    [32m  ✔[0m[90m single slab multiple glyph full[0m
+    [32m  ✔[0m[90m allocate 1x1 to multiple slabs until full[0m
+    [32m  ✔[0m[90m glyph too large for slab (increase slab size for first glyph)[0m
+    [32m  ✔[0m[90m glyph too large for slab (undefined as it's not the first glyph)[0m
+    [32m  ✔[0m[90m separate slabs for different sized glyphs[0m
+
+[0m  BufferDirtyTracker[0m
+  [32m  ✔[0m[90m flag(index)[0m
+  [32m  ✔[0m[90m flag(index, length)[0m
+
+[0m  DecorationCssRulerExtractor[0m
+  [32m  ✔[0m[90m unknown class should give no styles[0m
+  [32m  ✔[0m[90m single style should be picked up[0m
+  [32m  ✔[0m[90m multiple styles from the same selector should be picked up[0m
+  [32m  ✔[0m[90m multiple styles from  different selectors should be picked up[0m
+  [32m  ✔[0m[90m multiple styles from the different stylesheets should be picked up[0m
+  [32m  ✔[0m[90m should not pick up styles from selectors where the prefix is the class[0m
+  [32m  ✔[0m[90m should pick up styles with pseudo-class selectors[0m
+  [32m  ✔[0m[90m should pick up styles when className has multiple space-separated classes[0m
+
+[0m  GlyphRasterizer[0m
+  [32m  ✔[0m[90m matches DOM font metrics at device pixel ratio 0.95[0m
+  [32m  ✔[0m[90m matches DOM font metrics at device pixel ratio 1.25[0m
+  [32m  ✔[0m[90m matches DOM font metrics at device pixel ratio 1.5[0m
+  [32m  ✔[0m[90m matches DOM font metrics at device pixel ratio 2[0m
+
+[0m  GPU rendering[0m
+[45783:1010/045541.441466:INFO:CONSOLE:0] "No available adapters.", source: file://<checkout>/test/unit/electron/renderer.html?argv=%7B%22_%22%3A%5B%5D%2C%22build%22%3Afalse%2C%22coverage%22%3Afalse%2C%22help%22%3Afalse%2C%22h%22%3Afalse%2C%22dev%22%3Afalse%2C%22dev-tools%22%3Afalse%2C%22devTools%22%3Afalse%2C%22per-test-coverage%22%3Afalse%2C%22crash-reporter-directory%22%3A%22%2FUsers%2Frunner%2Fwork%2Fvscode%2Fvscode%2F.build%2Fcrashes%22%2C%22runGlob%22%3A%22**%2Feditor%2Ftest%2Fbrowser%2Fgpu%2F**%2F*.test.js%22%2C%22glob%22%3A%22**%2Feditor%2Ftest%2Fbrowser%2Fgpu%2F**%2F*.test.js%22%2C%22runGrep%22%3A%22**%2Feditor%2Ftest%2Fbrowser%2Fgpu%2F**%2F*.test.js%22%2C%22reporter%22%3A%22spec%22%2C%22reporter-options%22%3A%22%22%7D (0)
+  [36m  - preserves glyph alpha and draws after atlas growth and shrink[0m
+
+[0m  ObjectCollectionBuffer[0m
+  [32m  ✔[0m[90m createEntry[0m
+  [32m  ✔[0m[90m createEntry beyond capacity[0m
+  [32m  ✔[0m[90m dispose entry[0m
+  [32m  ✔[0m[90m entryCount, viewUsedSize, bufferUsedSize[0m
+  [32m  ✔[0m[90m entry.get[0m
+  [32m  ✔[0m[90m entry.set[0m
+
+[0m  GPU render strategies[0m
+  [32m  ✔[0m[90m full-file cache restores a line after DOM fallback[0m
+  [32m  ✔[0m[90m full-file cache clears obsolete rows in both buffers after delete and undo[0m
+  [32m  ✔[0m[90m viewport buffer growth destroys each allocation once[0m
+[0m    FullFileRenderStrategy[0m
+    [32m  ✔[0m[90m draws one instance per cell, limited to the visible lines[0m
+    [32m  ✔[0m[90m uses the same large-scroll origin for cells and scroll offsets[0m
+    [32m  ✔[0m[90m preserves wrapped-line indentation[0m
+    [32m  ✔[0m[90m unregisters its event handler when disposed[0m
+[0m    ViewportRenderStrategy[0m
+    [32m  ✔[0m[90m draws one instance per cell, limited to the visible lines[0m
+    [32m  ✔[0m[90m uses the same large-scroll origin for cells and scroll offsets[0m
+    [32m  ✔[0m[90m preserves wrapped-line indentation[0m
+    [32m  ✔[0m[90m unregisters its event handler when disposed[0m
+
+
+[92m [0m[32m 52 passing[0m[90m (172ms)[0m
+[36m [0m[36m 3 pending[0m
+

@@ -1,0 +1,130 @@
+{
+  "sourceCommit": "bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7",
+  "architecture": "x64",
+  "snapshots": [
+    {
+      "name": "top",
+      "devicePixelRatio": 1,
+      "canvas": [
+        832,
+        680
+      ],
+      "domText": "",
+      "lineNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33"
+      ],
+      "rect": {
+        "left": 53,
+        "right": 899,
+        "top": 88,
+        "bottom": 768
+      },
+      "ink": 231
+    },
+    {
+      "name": "line50000",
+      "devicePixelRatio": 1,
+      "canvas": [
+        832,
+        680
+      ],
+      "domText": "",
+      "lineNumbers": [
+        "49983",
+        "49984",
+        "49985",
+        "49986",
+        "49987",
+        "49988",
+        "49989",
+        "49990",
+        "49991",
+        "49992",
+        "49993",
+        "49994",
+        "49995",
+        "49996",
+        "49997",
+        "49998",
+        "49999",
+        "50000",
+        "50001",
+        "50002",
+        "50003",
+        "50004",
+        "50005",
+        "50006",
+        "50007",
+        "50008",
+        "50009",
+        "50010",
+        "50011",
+        "50012",
+        "50013",
+        "50014",
+        "50015",
+        "50016"
+      ],
+      "rect": {
+        "left": 53,
+        "right": 899,
+        "top": 88,
+        "bottom": 768
+      },
+      "ink": 483
+    }
+  ],
+  "errors": [
+    "%c  ERR color: #f33 Error: This browser supports WebGPU but it appears to be disabled\n    at Object.requestDevice (vscode-file://vscode-app<checkout>/.build/macos-app/Code%20-%20OSS.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:70938:15)"
+  ],
+  "electron": "43.7.7",
+  "gpuFeatureStatus": {
+    "2d_canvas": "unavailable_software",
+    "direct_rendering_display_compositor": "disabled_off_ok",
+    "gpu_compositing": "disabled_software",
+    "multiple_raster_threads": "enabled_on",
+    "opengl": "unavailable_off",
+    "rasterization": "unavailable_off",
+    "raw_draw": "disabled_off_ok",
+    "skia_graphite": "unavailable_off",
+    "trees_in_viz": "disabled_off",
+    "video_decode": "unavailable_off",
+    "video_encode": "unavailable_off",
+    "webgl": "unavailable_off",
+    "webgpu": "unavailable_software",
+    "webnn": "disabled_off"
+  },
+  "adapter": null
+}

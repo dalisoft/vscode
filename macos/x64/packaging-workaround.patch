@@ -1,0 +1,13 @@
+diff --git a/build/lib/extensions.ts b/build/lib/extensions.ts
+index 10bd9fbd..714e22c5 100644
+--- a/build/lib/extensions.ts
++++ b/build/lib/extensions.ts
+@@ -482,7 +482,7 @@ export function packageCopilotExtensionStream(): Stream {
+ 	return es.merge(
+ 		localExtensionsStream,
+ 		gulp.src(dependenciesSrc, { base: '.' })
+-			.pipe(util2.cleanNodeModules(path.join(root, 'build', '.moduleignore')))
++			.pipe(util2.cleanNodeModules(path.join(root, '.build', '.moduleignore-source-copilot')))
+ 			.pipe(util2.cleanNodeModules(path.join(root, 'build', `.moduleignore.${process.platform}`)))
+ 	).pipe(util2.setExecutableBit(['**/*.sh']));
+ }

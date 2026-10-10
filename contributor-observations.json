@@ -1,0 +1,34 @@
+{
+  "sourceCommit": "bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7",
+  "hardware": "Apple M1 Max, 64GB RAM, 32-core GPU",
+  "manualReport": "Glyphs and code scrolling do not break so far; broader manual checks ongoing",
+  "memoryReportedMiBApprox": {
+    "on": {
+      "main": 262,
+      "gpu": 131,
+      "network": 66,
+      "window": 1180,
+      "extensionHost": 131,
+      "jsonLanguageServer": 197,
+      "shared": 131,
+      "fileWatcher": 66
+    },
+    "off": {
+      "main": 262,
+      "gpu": 131,
+      "network": 66,
+      "window": 655,
+      "extensionHost": 197,
+      "jsonLanguageServer": 197,
+      "shared": 131,
+      "fileWatcher": 66
+    }
+  },
+  "windowIncreasePercentApprox": 80.15,
+  "sumOfDisplayedRows": {
+    "on": 2164,
+    "off": 1705,
+    "increasePercent": 26.92
+  },
+  "limitations": "Contributor screenshots, not an automated matched workload measurement. Process Explorer estimates from rounded ps %MEM; summed rows are not unique physical memory. No screenshot/user path published. Total-memory acceptance remains open."
+}

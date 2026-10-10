@@ -1,0 +1,174 @@
+npm warn Unknown env config "arch". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> code-oss-dev@1.142.0 gulp
+> node --experimental-strip-types --max-old-space-size=8192 ./node_modules/gulp/bin/gulp.js vscode-darwin-arm64
+
+[04:33:50] Using gulpfile ~/work/vscode/vscode/gulpfile.mjs
+[04:33:50] Starting 'vscode-darwin-arm64'...
+[04:33:50] Starting copy-codicons ...
+[04:33:50] Finished copy-codicons after 2 ms
+[04:33:50] Starting clean-extensions-build ...
+[04:33:50] Finished clean-extensions-build after 1 ms
+[04:33:50] Starting bundle-marketplace-extensions-build ...
+[04:33:50] Downloading extension from GH: ms-vscode.js-debug-companion@1.1.3  ...
+[04:33:50] Downloading extension from GH: ms-vscode.js-debug@1.140.0  ...
+[04:33:50] Downloading extension from GH: ms-vscode.vscode-js-profile-table@1.0.11  ...
+[04:33:50] Start fetching https://api.github.com/repos/microsoft/vscode-js-debug-companion/releases/tags/v1.1.3
+[04:33:50] Start fetching https://api.github.com/repos/microsoft/vscode-js-debug/releases/tags/v1.140.0
+[04:33:50] Start fetching https://api.github.com/repos/microsoft/vscode-js-profile-visualizer/releases/tags/v1.0.11
+[04:33:51] Fetch completed: Status 200. Took 201 ms
+[04:33:51] Fetch completed: Status 200. Took 194 ms
+[04:33:51] Skipping checksum verification for https://api.github.com/repos/microsoft/vscode-js-debug-companion/releases/tags/v1.1.3 because no expected checksum was provided
+[04:33:51] Fetched response body buffer: 6792 bytes
+[04:33:51] Start fetching https://api.github.com/repos/microsoft/vscode-js-debug-companion/releases/assets/181600923
+[04:33:51] Skipping checksum verification for https://api.github.com/repos/microsoft/vscode-js-debug/releases/tags/v1.140.0 because no expected checksum was provided
+[04:33:51] Fetched response body buffer: 7340 bytes
+[04:33:51] Start fetching https://api.github.com/repos/microsoft/vscode-js-debug/releases/assets/584220989
+[04:33:51] Fetch completed: Status 200. Took 198 ms
+[04:33:51] Skipping checksum verification for https://api.github.com/repos/microsoft/vscode-js-profile-visualizer/releases/tags/v1.0.11 because no expected checksum was provided
+[04:33:51] Fetched response body buffer: 4302 bytes
+[04:33:51] Start fetching https://api.github.com/repos/microsoft/vscode-js-profile-visualizer/releases/assets/497034221
+[04:33:51] Fetch completed: Status 200. Took 253 ms
+[04:33:51] Fetch completed: Status 200. Took 256 ms
+[04:33:51] Verified SHA256 checksums match for https://api.github.com/repos/microsoft/vscode-js-debug-companion/releases/assets/181600923
+[04:33:51] Fetched response body buffer: 52784 bytes
+(node:39682) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[04:33:51] Verified SHA256 checksums match for https://api.github.com/repos/microsoft/vscode-js-profile-visualizer/releases/assets/497034221
+[04:33:51] Fetched response body buffer: 329373 bytes
+[04:33:51] Fetch completed: Status 200. Took 307 ms
+[04:33:51] Verified SHA256 checksums match for https://api.github.com/repos/microsoft/vscode-js-debug/releases/assets/584220989
+[04:33:51] Fetched response body buffer: 1350618 bytes
+[04:33:51] Finished bundle-marketplace-extensions-build after 948 ms
+[04:33:51] Starting bundle-non-native-extensions-build ...
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/debug-auto-launch/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/debug-server-ready/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/emmet/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/extension-editing/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/git-base/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/grunt/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/gulp/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/markdown-math/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/media-preview/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/merge-conflict/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/mermaid-markdown-features/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/php-language-features/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/references-view/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/search-result/tsconfig.json with 0 errors.
+[04:34:12] Finished typechecking extension (tsgo) <checkout>/extensions/tunnel-forwarding/tsconfig.json with 0 errors.
+[04:34:12] Bundled extension: typescript-language-features/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: tunnel-forwarding/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: terminal-suggest/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: simple-browser/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: search-result/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: references-view/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: php-language-features/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: npm/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: mermaid-markdown-features/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: merge-conflict/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: media-preview/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: markdown-math/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: json-language-features/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: jake/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: ipynb/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: gulp/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: grunt/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: github/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: github-authentication/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: git-base/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: extension-editing/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: emmet/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: debug-server-ready/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: debug-auto-launch/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: css-language-features/esbuild.mts with 0 errors.
+[04:34:12] Bundled extension: configuration-editing/esbuild.mts with 0 errors.
+[04:34:13] Finished typechecking extension (tsgo) <checkout>/extensions/css-language-features/client/tsconfig.json with 0 errors.
+[04:34:13] Finished typechecking extension (tsgo) <checkout>/extensions/css-language-features/server/tsconfig.json with 0 errors.
+[04:34:13] Finished typechecking extension (tsgo) <checkout>/extensions/jake/tsconfig.json with 0 errors.
+[04:34:13] Finished typechecking extension (tsgo) <checkout>/extensions/npm/tsconfig.json with 0 errors.
+[04:34:13] Finished typechecking extension (tsgo) <checkout>/extensions/simple-browser/tsconfig.json with 0 errors.
+[04:34:13] Bundled extension: html-language-features/esbuild.mts with 0 errors.
+[04:34:13] Finished typechecking extension (tsgo) <checkout>/extensions/github/tsconfig.json with 0 errors.
+[04:34:13] Finished typechecking extension (tsgo) <checkout>/extensions/html-language-features/client/tsconfig.json with 0 errors.
+[04:34:13] Finished typechecking extension (tsgo) <checkout>/extensions/html-language-features/server/tsconfig.json with 0 errors.
+[04:34:13] Finished typechecking extension (tsgo) <checkout>/extensions/json-language-features/client/tsconfig.json with 0 errors.
+[04:34:13] Finished typechecking extension (tsgo) <checkout>/extensions/json-language-features/server/tsconfig.json with 0 errors.
+[04:34:13] Bundled extension: markdown-language-features/esbuild.mts with 0 errors.
+[04:34:16] Finished typechecking extension (tsgo) <checkout>/extensions/github-authentication/tsconfig.json with 0 errors.
+[04:34:17] Finished typechecking extension (tsgo) <checkout>/extensions/ipynb/tsconfig.json with 0 errors.
+[04:34:17] Finished typechecking extension (tsgo) <checkout>/extensions/markdown-language-features/tsconfig.json with 0 errors.
+[04:34:17] Finished typechecking extension (tsgo) <checkout>/extensions/terminal-suggest/tsconfig.json with 0 errors.
+[04:34:17] Finished typechecking extension (tsgo) <checkout>/extensions/typescript-language-features/tsconfig.json with 0 errors.
+[04:34:18] Finished typechecking extension (tsgo) <checkout>/extensions/configuration-editing/tsconfig.json with 0 errors.
+[04:34:31] Finished bundle-non-native-extensions-build after 39270 ms
+[04:34:31] Starting compile-non-native-extensions-build ...
+[04:34:31] Finished compile-non-native-extensions-build after 0 ms
+[04:34:31] Starting compile-copilot-extension-build ...
+[04:34:39] esbuilding: Creating symlinks for Claude session storage and instructions...
+
+[04:34:41] Bundled extension: copilot/.esbuild.mts with 0 errors.
+[04:36:37] Finished compile-copilot-extension-build after 126623 ms
+[04:36:37] Starting compile-extension-media-build ...
+[04:36:38] Finished typechecking extension media (tsgo) <checkout>/extensions/ipynb/notebook-src/tsconfig.json with 0 errors.
+[04:36:38] Finished typechecking extension media (tsgo) <checkout>/extensions/markdown-language-features/notebook/tsconfig.json with 0 errors.
+[04:36:38] Finished esbuilding extension media <checkout>/extensions/markdown-language-features/esbuild.webview.mts with 0 errors.
+[04:36:39] Finished typechecking extension media (tsgo) <checkout>/extensions/markdown-math/notebook/tsconfig.json with 0 errors.
+[04:36:39] Finished esbuilding extension media <checkout>/extensions/ipynb/esbuild.notebook.mts with 0 errors.
+[04:36:39] Finished esbuilding extension media <checkout>/extensions/markdown-language-features/esbuild.notebook.mts with 0 errors.
+[04:36:39] Finished esbuilding extension media <checkout>/extensions/notebook-renderers/esbuild.notebook.mts with 0 errors.
+[04:36:39] Finished esbuilding extension media <checkout>/extensions/markdown-math/esbuild.notebook.mts with 0 errors.
+[04:36:39] Finished typechecking extension media (tsgo) <checkout>/extensions/markdown-language-features/preview-src/tsconfig.json with 0 errors.
+[04:36:39] Finished esbuilding extension media <checkout>/extensions/simple-browser/esbuild.webview.mts with 0 errors.
+[04:36:39] Finished typechecking extension media (tsgo) <checkout>/extensions/notebook-renderers/tsconfig.json with 0 errors.
+[04:36:39] Finished typechecking extension media (tsgo) <checkout>/extensions/markdown-language-features/markdown-editor-src/tsconfig.json with 0 errors.
+[04:36:39] Finished typechecking extension media (tsgo) <checkout>/extensions/simple-browser/preview-src/tsconfig.json with 0 errors.
+[04:36:42] Finished typechecking extension media (tsgo) <checkout>/extensions/mermaid-markdown-features/preview-src/tsconfig.json with 0 errors.
+[04:36:42] Finished esbuilding extension media <checkout>/extensions/markdown-language-features/esbuild.markdownEditor.mts with 0 errors.
+[04:36:43] Finished esbuilding extension media <checkout>/extensions/mermaid-markdown-features/esbuild.webview.mts with 0 errors.
+[04:36:43] Finished compile-extension-media-build after 5598 ms
+[04:36:43] Starting build-date-file ...
+[04:36:43] Finished build-date-file after 86 ms
+[04:36:43] Starting esbuild-bundle-darwin-arm64 ...
+[clean] out-vscode
+[bundle] src → out-vscode (target: desktop) (nls)
+[nls] Extracted 27672 messages from 2170 modules
+[bundle] Syntax check passed for 17 post-processed JS files
+[resources] Copying to <checkout>/out-vscode for target 'desktop'...
+[resources] Copied 246 files
+[standalone] Compiling 3 standalone files...
+[standalone] Done
+[bundle] Done in 132476ms (25 bundles)
+
+✓ Total: 132478ms
+[04:38:57] Finished esbuild-bundle-darwin-arm64 after 134367 ms
+[04:38:57] Starting compile-native-extensions-build ...
+[04:38:59] Finished typechecking extension (tsgo) <checkout>/extensions/git/tsconfig.json with 0 errors.
+[04:38:59] Finished typechecking extension (tsgo) <checkout>/extensions/microsoft-authentication/tsconfig.json with 0 errors.
+[04:38:59] Bundled extension: microsoft-authentication/esbuild.mts with 0 errors.
+[04:38:59] Bundled extension: git/esbuild.mts with 0 errors.
+[04:39:00] Finished compile-native-extensions-build after 2727 ms
+[04:39:00] Starting clean-vscode-darwin-arm64 ...
+[04:39:00] Finished clean-vscode-darwin-arm64 after 1 ms
+[04:39:00] Starting package-darwin-arm64 ...
+
+
+[04:39:40] Finished package-darwin-arm64 after 39876 ms
+[04:39:40] Starting vscode-darwin-arm64-ci ...
+[04:39:40] 'vscode-darwin-arm64' errored after 5.82 min
+[04:39:40] Error: [prepareBuiltInCopilotRipgrepShim] Copilot SDK directory not found at <build-parent>/VSCode-darwin-arm64/Code - OSS.app/Contents/Resources/app/extensions/copilot/node_modules/@github/copilot/sdk
+    at prepareBuiltInCopilotRipgrepShim (file://<checkout>/build/lib/copilot.ts:253:9)
+    at <checkout>/build/gulpfile.vscode.ts:547:3
+    at file://<checkout>/build/lib/gulp/task.ts:121:22
+    at new Promise (<anonymous>)
+    at _doExecute (file://<checkout>/build/lib/gulp/task.ts:109:9)
+    at _execute (file://<checkout>/build/lib/gulp/task.ts:99:8)
+    at result (file://<checkout>/build/lib/gulp/task.ts:55:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async _execute (file://<checkout>/build/lib/gulp/task.ts:99:2)
+    at async result (file://<checkout>/build/lib/gulp/task.ts:55:4)

@@ -1,0 +1,11 @@
+{
+  "sourceCommit": "6b7eeb61a080fbb6812bcd95faac6aa9b73d2867",
+  "checkedOutCommit": "6b7eeb61a080fbb6812bcd95faac6aa9b73d2867",
+  "node": "v24.18.0",
+  "architecture": "arm64",
+  "macOS": "ProductName:\t\tmacOS\nProductVersion:\t\t15.7.9\nBuildVersion:\t\t24G830",
+  "electron": "43.7.7",
+  "run": "https://github.com/dalisoft/vscode/actions/runs/38024148371",
+  "signing": "ad hoc; not Apple notarized",
+  "aiAssisted": "OpenAI Codex under @dalisoft direction"
+}

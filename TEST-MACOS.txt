@@ -1,0 +1,53 @@
+Code OSS editor GPU test build
+Source: bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7
+
+This download targets Apple Silicon (M1/M2/M3/M4/M5). Extract the arm64
+application ZIP with Archive Utility. This is an ad hoc signed, unnotarized Code OSS build.
+If macOS blocks opening it, use System Settings > Privacy & Security > Open
+Anyway for this specific app. The ZIP checksum and exact source are published
+with the build. Apple documents the app-specific override here:
+https://support.apple.com/102445
+Keep the app separate from your installed Visual Studio Code.
+
+Quick start (the shell script creates a dedicated test profile and fixture):
+
+  bash test-macos.sh on "/path/to/Code - OSS.app"
+
+Quit Code OSS fully before changing the comparison mode:
+
+  bash test-macos.sh off "/path/to/Code - OSS.app"
+
+The profile is "~/Library/Application Support/Code OSS Editor GPU Test".
+The script rewrites that TEST profile's settings each time. The app is Code
+OSS built from upstream main plus the editor fix. Terminal PR #340776 is a
+separate source change and is not included in this editor-only build.
+
+Manual checks:
+
+1. Compare font weight and color in Quiet Light with GPU on and off. Open your
+   settings JSON too, and check syntax colors, cursor alignment and selection.
+2. In the generated 60,000-line fixture, use Go to Line to visit 20,000, 35,000
+   and 50,000. Scroll further and return to line 100. Text should remain visible
+   and aligned with the cursor.
+3. Delete several lines around 50,000; undo and redo. Look for stale glyphs.
+4. Split the editor, resize both panes, and repeatedly zoom in/out. Check your
+   usual display scale and an external monitor if available. Repeat in a dark
+   theme. Ligature support is still a separate unfinished GPU feature.
+5. For memory comparison, fully quit between modes, use the same files, panes,
+   theme and zoom, and allow the editor to finish loading before recording
+   measurements. Record Code OSS and its renderer/GPU helpers in Activity
+   Monitor, plus overall memory pressure. Repeat each mode several times.
+   Process memory readings can include shared allocations; the atlas capacity
+   calculation is not a total-memory measurement.
+6. If comparing performance, record the same scrolling/editing sequence with
+   Developer: Toggle Developer Tools > Performance in both modes. Capture the
+   elapsed time/frame behavior and memory, rather than inferring a whole-UI
+   speedup from the number of submitted instances.
+
+Useful feedback: Mac model/chip, macOS version, monitor scale, font and size,
+whether the artifact checksum matches, failing sequence, screenshots and
+Developer Tools Console errors. Native visual and total-memory confirmation
+remain pending until this test is performed on your Mac.
+
+AI-assisted: implementation, investigation and automated validation generated
+with OpenAI Codex under @dalisoft's direction.

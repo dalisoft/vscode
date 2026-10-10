@@ -1,0 +1,93 @@
+npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> code-oss-dev@1.142.0 test-browser-no-install
+> node test/unit/browser/index.js --browser chromium --runGlob **/editor/test/browser/gpu/**/*.test.js
+
+
+
+  GpuAtlasStorage - /CHROMIUM/
+    ✔ allocates only needed pages, reuses capacity and releases replaced storage
+    ✔ reallocates when page dimensions change and rejects invalid page counts
+
+  TextureAtlas - /CHROMIUM/
+    ✔ get single glyph
+    ✔ get multiple glyphs
+    ✔ adding glyph to full page creates new page
+    ✔ adding a glyph larger than the atlas
+    ✔ adding a glyph larger than the standard slab size
+    ✔ adding a non-first glyph larger than the standard slab size, causing an overflow to a new page
+
+  TextureAtlasAllocator - /CHROMIUM/
+    shared tests - /CHROMIUM/
+      ✔ (shelf) single allocation
+      - (shelf) glyph too large for canvas
+      ✔ (slab) single allocation
+      - (slab) glyph too large for canvas
+    TextureAtlasShelfAllocator - /CHROMIUM/
+      ✔ single allocation
+      ✔ wrapping
+      ✔ full
+    TextureAtlasSlabAllocator - /CHROMIUM/
+      ✔ single allocation
+      ✔ single slab single glyph full
+      ✔ single slab multiple glyph full
+      ✔ allocate 1x1 to multiple slabs until full
+      ✔ glyph too large for slab (increase slab size for first glyph)
+      ✔ glyph too large for slab (undefined as it's not the first glyph)
+      ✔ separate slabs for different sized glyphs
+
+  BufferDirtyTracker - /CHROMIUM/
+    ✔ flag(index)
+    ✔ flag(index, length)
+
+  DecorationCssRulerExtractor - /CHROMIUM/
+    ✔ unknown class should give no styles
+    ✔ single style should be picked up
+    ✔ multiple styles from the same selector should be picked up
+    ✔ multiple styles from  different selectors should be picked up
+    ✔ multiple styles from the different stylesheets should be picked up
+    ✔ should not pick up styles from selectors where the prefix is the class
+    ✔ should pick up styles with pseudo-class selectors
+    ✔ should pick up styles when className has multiple space-separated classes
+
+  GlyphRasterizer - /CHROMIUM/
+    ✔ matches DOM font metrics at device pixel ratio 0.95
+    ✔ matches DOM font metrics at device pixel ratio 1.25
+    ✔ matches DOM font metrics at device pixel ratio 1.5
+    ✔ matches DOM font metrics at device pixel ratio 2
+
+  GPU rendering - /CHROMIUM/
+    ✔ preserves glyph alpha and draws after atlas growth and shrink (76ms)
+
+  ObjectCollectionBuffer - /CHROMIUM/
+    ✔ createEntry
+    ✔ createEntry beyond capacity
+    ✔ dispose entry
+    ✔ entryCount, viewUsedSize, bufferUsedSize
+    ✔ entry.get
+    ✔ entry.set
+
+  GPU render strategies - /CHROMIUM/
+    ✔ full-file cache restores a line after DOM fallback
+    ✔ full-file cache clears obsolete rows in both buffers after delete and undo
+    ✔ viewport buffer growth destroys each allocation once
+    FullFileRenderStrategy - /CHROMIUM/
+      ✔ draws one instance per cell, limited to the visible lines
+      ✔ uses the same large-scroll origin for cells and scroll offsets
+      ✔ preserves wrapped-line indentation
+      ✔ unregisters its event handler when disposed
+    ViewportRenderStrategy - /CHROMIUM/
+      ✔ draws one instance per cell, limited to the visible lines
+      ✔ uses the same large-scroll origin for cells and scroll offsets
+      ✔ preserves wrapped-line indentation
+      ✔ unregisters its event handler when disposed
+
+
+  52 passing (368ms)
+  2 pending
+

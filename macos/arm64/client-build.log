@@ -1,0 +1,51 @@
+npm warn Unknown env config "arch". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> code-oss-dev@1.142.0 build-fast
+> node build/next/build-fast.ts --client-only
+
+[build-fast] incremental state is missing
+[build-fast] client=full, extensions=skip, copilot=skip
+npm warn Unknown env config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "build-from-source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "ms-build-id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "arch". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> code-oss-dev@1.142.0 gulp
+> node --experimental-strip-types --max-old-space-size=8192 ./node_modules/gulp/bin/gulp.js copy-codicons compile-api-proposal-names compile-extension-point-names
+
+[04:49:19] Using gulpfile ~/work/vscode/vscode/gulpfile.mjs
+[04:49:19] Starting 'copy-codicons'...
+[04:49:19] Starting 'compile-api-proposal-names'...
+[04:49:19] Starting 'compile-extension-point-names'...
+[04:49:19] Starting [32mcompilation[39m[34m api-proposal-names[39m...
+[04:49:19] Starting [32mcompilation[39m[34m extension-point-names[39m...
+[04:49:19] Finished 'copy-codicons' after 17 ms
+[04:49:20] Finished [32mcompilation[39m[34m api-proposal-names[39m with 0 errors after [35m551 ms[39m
+[04:49:20] Finished 'compile-api-proposal-names' after 563 ms
+[04:49:22] Finished [32mcompilation[39m[34m extension-point-names[39m with 0 errors after [35m3190 ms[39m
+[04:49:22] Finished 'compile-extension-point-names' after 3.2 s
+[build-fast] prerequisites finished in 6792ms
+[clean] out
+[transpile] src → out
+[transpile] Found 10040 files
+[resources] Copying all non-TS files to out...
+[resources] Copied 2300 files
+[transpile] Done in 12271ms
+
+✓ Total: 12297ms
+[build-fast] client finished in 13223ms

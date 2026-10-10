@@ -1,0 +1,3 @@
+Error: %c  ERR color: #f33 Error: This browser supports WebGPU but it appears to be disabled
+    at Object.requestDevice (vscode-file://vscode-app<checkout>/.build/macos-app/Code%20-%20OSS.app/Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js:70938:15)
+    at <checkout>/.github/scripts/editor-gpu-macos-smoke.cjs:96:28

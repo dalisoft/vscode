@@ -1,0 +1,41 @@
+[
+  {
+    "name": "typecheck",
+    "exitCode": 0,
+    "command": "node_modules/.bin/tsc -p .agent-validation/publish/typecheck-config.json --pretty false"
+  },
+  {
+    "name": "eslint",
+    "exitCode": 0,
+    "command": [
+      "npm",
+      "run",
+      "eslint",
+      "--",
+      "src/vs/editor/browser/gpu/atlas/gpuAtlasStorage.ts",
+      "src/vs/editor/browser/gpu/gpuUtils.ts",
+      "src/vs/editor/browser/gpu/raster/glyphRasterizer.ts",
+      "src/vs/editor/browser/gpu/rectangleRenderer.ts",
+      "src/vs/editor/browser/gpu/renderStrategy/baseRenderStrategy.ts",
+      "src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.ts",
+      "src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.wgsl.ts",
+      "src/vs/editor/browser/gpu/renderStrategy/viewportRenderStrategy.ts",
+      "src/vs/editor/browser/viewParts/viewLinesGpu/viewLinesGpu.ts",
+      "src/vs/editor/test/browser/gpu/atlas/gpuAtlasStorage.test.ts",
+      "src/vs/editor/test/browser/gpu/glyphRasterizer.test.ts",
+      "src/vs/editor/test/browser/gpu/gpuRendering.test.ts",
+      "src/vs/editor/test/browser/gpu/renderStrategy.test.ts"
+    ]
+  },
+  {
+    "name": "diff-check",
+    "exitCode": 0,
+    "command": [
+      "git",
+      "diff",
+      "--check",
+      "HEAD^",
+      "HEAD"
+    ]
+  }
+]

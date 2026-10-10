@@ -1,0 +1,121 @@
+{
+  "sourceCommit": "bdc89a4aa6d4e412e43e5e8ac868a79cbe1e83b7",
+  "architecture": "arm64",
+  "snapshots": [
+    {
+      "name": "top",
+      "devicePixelRatio": 1,
+      "canvas": [
+        700,
+        561
+      ],
+      "domText": "",
+      "lineNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "rect": {
+        "left": 53,
+        "right": 767,
+        "top": 87,
+        "bottom": 648
+      },
+      "ink": 11642
+    },
+    {
+      "name": "line50000",
+      "devicePixelRatio": 1,
+      "canvas": [
+        700,
+        561
+      ],
+      "domText": "",
+      "lineNumbers": [
+        "49986",
+        "49987",
+        "49988",
+        "49989",
+        "49990",
+        "49991",
+        "49992",
+        "49993",
+        "49994",
+        "49995",
+        "49996",
+        "49997",
+        "49998",
+        "49999",
+        "50000",
+        "50001",
+        "50002",
+        "50003",
+        "50004",
+        "50005",
+        "50006",
+        "50007",
+        "50008",
+        "50009",
+        "50010",
+        "50011",
+        "50012",
+        "50013"
+      ],
+      "rect": {
+        "left": 53,
+        "right": 767,
+        "top": 88,
+        "bottom": 649
+      },
+      "ink": 13421
+    }
+  ],
+  "errors": [],
+  "electron": "43.7.7",
+  "gpuFeatureStatus": {
+    "2d_canvas": "enabled",
+    "direct_rendering_display_compositor": "disabled_off_ok",
+    "gpu_compositing": "enabled",
+    "multiple_raster_threads": "disabled_off",
+    "opengl": "enabled_on",
+    "rasterization": "enabled",
+    "raw_draw": "disabled_off_ok",
+    "skia_graphite": "enabled_on",
+    "trees_in_viz": "disabled_off",
+    "video_decode": "enabled",
+    "video_encode": "enabled",
+    "webgl": "enabled",
+    "webgpu": "enabled",
+    "webnn": "disabled_off"
+  },
+  "adapter": {
+    "vendor": "apple",
+    "architecture": "",
+    "device": "",
+    "description": ""
+  }
+}

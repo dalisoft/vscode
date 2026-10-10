@@ -1,0 +1,26 @@
+[
+  {
+    "name": "strategy-original",
+    "command": "npm run test-browser-no-install -- --browser chromium --run src/vs/editor/test/browser/gpu/renderStrategy.test.ts",
+    "exitCode": 1,
+    "failureCount": 8
+  },
+  {
+    "name": "alpha-original",
+    "command": "npm run test-browser-no-install -- --browser chromium --run src/vs/editor/test/browser/gpu/gpuRendering.test.ts",
+    "exitCode": 1,
+    "failureCount": 1
+  },
+  {
+    "name": "font-original",
+    "command": "npm run test-browser-no-install -- --browser chromium --run src/vs/editor/test/browser/gpu/glyphRasterizer.test.ts",
+    "exitCode": 1,
+    "failureCount": 2
+  },
+  {
+    "name": "fixed-suite",
+    "command": "npm run test-browser-no-install -- --browser chromium --runGlob **/editor/test/browser/gpu/**/*.test.js",
+    "exitCode": 0,
+    "failureCount": 0
+  }
+]

@@ -1,0 +1,15 @@
+$ npm run eslint -- src/vs/editor/browser/gpu/atlas/gpuAtlasStorage.ts src/vs/editor/browser/gpu/gpuUtils.ts src/vs/editor/browser/gpu/raster/glyphRasterizer.ts src/vs/editor/browser/gpu/rectangleRenderer.ts src/vs/editor/browser/gpu/renderStrategy/baseRenderStrategy.ts src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.ts src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.wgsl.ts src/vs/editor/browser/gpu/renderStrategy/viewportRenderStrategy.ts src/vs/editor/browser/viewParts/viewLinesGpu/viewLinesGpu.ts src/vs/editor/test/browser/gpu/atlas/gpuAtlasStorage.test.ts src/vs/editor/test/browser/gpu/glyphRasterizer.test.ts src/vs/editor/test/browser/gpu/gpuRendering.test.ts src/vs/editor/test/browser/gpu/renderStrategy.test.ts
+npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> code-oss-dev@1.142.0 eslint
+> node --max-old-space-size=8192 build/eslint.ts src/vs/editor/browser/gpu/atlas/gpuAtlasStorage.ts src/vs/editor/browser/gpu/gpuUtils.ts src/vs/editor/browser/gpu/raster/glyphRasterizer.ts src/vs/editor/browser/gpu/rectangleRenderer.ts src/vs/editor/browser/gpu/renderStrategy/baseRenderStrategy.ts src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.ts src/vs/editor/browser/gpu/renderStrategy/fullFileRenderStrategy.wgsl.ts src/vs/editor/browser/gpu/renderStrategy/viewportRenderStrategy.ts src/vs/editor/browser/viewParts/viewLinesGpu/viewLinesGpu.ts src/vs/editor/test/browser/gpu/atlas/gpuAtlasStorage.test.ts src/vs/editor/test/browser/gpu/glyphRasterizer.test.ts src/vs/editor/test/browser/gpu/gpuRendering.test.ts src/vs/editor/test/browser/gpu/renderStrategy.test.ts
+
+ESLint: checking 13 requested targets.
+ESLint: checked 13 files in 1617ms.
+
+Exit status: 0

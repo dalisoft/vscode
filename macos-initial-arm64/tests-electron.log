@@ -1,0 +1,94 @@
+Found --crash-reporter-directory argument. Setting crashDumps directory to be '<checkout>/.build/crashes'
+2026-10-10 04:33:45.850 Code - OSS Helper[39640:79797] XPC error for connection com.apple.backupd.sandbox.xpc: Connection invalid
+2026-10-10 04:33:45.850 Code - OSS Helper[39640:79796] XPC error for connection com.apple.backupd.sandbox.xpc: Connection invalid
+2026-10-10 04:33:45.896 Code - OSS Helper[39640:79796] XPC error for connection com.apple.backupd.sandbox.xpc: Connection invalid
+(node:39642) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `Code - OSS Helper (Renderer) --trace-deprecation ...` to show where the warning was created)
+(node:39642) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:39642) ExperimentalWarning: WASI is an experimental feature and might change at any time
+
+
+  Tests are using suiteSetup and setup correctly
+    ✔ assertCleanState - check that registries are clean at the start of test running
+
+  GpuAtlasStorage
+    ✔ allocates only needed pages, reuses capacity and releases replaced storage
+    ✔ reallocates when page dimensions change and rejects invalid page counts
+
+  TextureAtlas
+    ✔ get single glyph
+    ✔ get multiple glyphs
+    ✔ adding glyph to full page creates new page
+    ✔ adding a glyph larger than the atlas
+    ✔ adding a glyph larger than the standard slab size
+    ✔ adding a non-first glyph larger than the standard slab size, causing an overflow to a new page
+
+  TextureAtlasAllocator
+    shared tests
+      ✔ (shelf) single allocation
+      - (shelf) glyph too large for canvas
+      ✔ (slab) single allocation
+      - (slab) glyph too large for canvas
+    TextureAtlasShelfAllocator
+      ✔ single allocation
+      ✔ wrapping
+      ✔ full
+    TextureAtlasSlabAllocator
+      ✔ single allocation
+      ✔ single slab single glyph full
+      ✔ single slab multiple glyph full
+      ✔ allocate 1x1 to multiple slabs until full
+      ✔ glyph too large for slab (increase slab size for first glyph)
+      ✔ glyph too large for slab (undefined as it's not the first glyph)
+      ✔ separate slabs for different sized glyphs
+
+  BufferDirtyTracker
+    ✔ flag(index)
+    ✔ flag(index, length)
+
+  DecorationCssRulerExtractor
+    ✔ unknown class should give no styles
+    ✔ single style should be picked up
+    ✔ multiple styles from the same selector should be picked up
+    ✔ multiple styles from  different selectors should be picked up
+    ✔ multiple styles from the different stylesheets should be picked up
+    ✔ should not pick up styles from selectors where the prefix is the class
+    ✔ should pick up styles with pseudo-class selectors
+    ✔ should pick up styles when className has multiple space-separated classes
+
+  GlyphRasterizer
+    ✔ matches DOM font metrics at device pixel ratio 0.95 (40ms)
+    ✔ matches DOM font metrics at device pixel ratio 1.25
+    ✔ matches DOM font metrics at device pixel ratio 1.5
+    ✔ matches DOM font metrics at device pixel ratio 2
+
+  GPU rendering
+    ✔ preserves glyph alpha and draws after atlas growth and shrink (526ms)
+
+  ObjectCollectionBuffer
+    ✔ createEntry
+    ✔ createEntry beyond capacity
+    ✔ dispose entry
+    ✔ entryCount, viewUsedSize, bufferUsedSize
+    ✔ entry.get
+    ✔ entry.set
+
+  GPU render strategies
+    ✔ full-file cache restores a line after DOM fallback
+    ✔ full-file cache clears obsolete rows in both buffers after delete and undo
+    ✔ viewport buffer growth destroys each allocation once
+    FullFileRenderStrategy
+      ✔ draws one instance per cell, limited to the visible lines
+      ✔ uses the same large-scroll origin for cells and scroll offsets
+      ✔ preserves wrapped-line indentation
+      ✔ unregisters its event handler when disposed
+    ViewportRenderStrategy
+      ✔ draws one instance per cell, limited to the visible lines
+      ✔ uses the same large-scroll origin for cells and scroll offsets
+      ✔ preserves wrapped-line indentation
+      ✔ unregisters its event handler when disposed
+
+
+  53 passing (683ms)
+  2 pending
+

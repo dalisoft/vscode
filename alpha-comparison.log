@@ -1,0 +1,70 @@
+{
+  "adapter": {},
+  "results": [
+    {
+      "dpr": 1,
+      "theme": "light",
+      "alphaFactor": "src-alpha",
+      "maxAlphaError": 0.2509803921568628,
+      "maxColorError": 61.73725490196077,
+      "affected": 4349
+    },
+    {
+      "dpr": 1,
+      "theme": "light",
+      "alphaFactor": "one",
+      "maxAlphaError": 0,
+      "maxColorError": 0.33333333333337123,
+      "affected": 0
+    },
+    {
+      "dpr": 1,
+      "theme": "dark",
+      "alphaFactor": "src-alpha",
+      "maxAlphaError": 0.2509803921568628,
+      "maxColorError": 7.7764705882352985,
+      "affected": 3900
+    },
+    {
+      "dpr": 1,
+      "theme": "dark",
+      "alphaFactor": "one",
+      "maxAlphaError": 0,
+      "maxColorError": 0.3333333333333428,
+      "affected": 0
+    },
+    {
+      "dpr": 2,
+      "theme": "light",
+      "alphaFactor": "src-alpha",
+      "maxAlphaError": 0.2509803921568628,
+      "maxColorError": 61.73725490196077,
+      "affected": 13239
+    },
+    {
+      "dpr": 2,
+      "theme": "light",
+      "alphaFactor": "one",
+      "maxAlphaError": 0,
+      "maxColorError": 0.33333333333337123,
+      "affected": 0
+    },
+    {
+      "dpr": 2,
+      "theme": "dark",
+      "alphaFactor": "src-alpha",
+      "maxAlphaError": 0.2509803921568628,
+      "maxColorError": 7.7764705882352985,
+      "affected": 12559
+    },
+    {
+      "dpr": 2,
+      "theme": "dark",
+      "alphaFactor": "one",
+      "maxAlphaError": 0,
+      "maxColorError": 0.3333333333333428,
+      "affected": 0
+    }
+  ],
+  "errors": []
+}
